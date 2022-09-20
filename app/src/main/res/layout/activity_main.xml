@@ -7,15 +7,65 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/imagePreview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="347dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="99dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="242dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/약국번가로고_텍스트포함"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <EditText
+        android:id="@+id/tvId1"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="아이디" />
+
+    <EditText
+        android:id="@+id/tvPw1"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="비밀번호" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="vertical"></LinearLayout>
 
     <Button
-        android:id="@+id/buttonCamera"
-        android:layout_width="match_parent"
+        android:id="@+id/btnLogin"
+        android:layout_width="128dp"
         android:layout_height="wrap_content"
-        android:text="카메라" />
+        android:layout_gravity="center"
+        android:backgroundTint="#FE730E"
+        android:text="로그인" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFFFFF"
+        android:text="회원가입"
+        android:textColor="#FE730E"
+        app:strokeColor="#FE730E"
+        app:strokeWidth="2sp" />
 </LinearLayout>
