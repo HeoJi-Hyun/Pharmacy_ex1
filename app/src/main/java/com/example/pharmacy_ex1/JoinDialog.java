@@ -11,5 +11,6 @@ public class JoinDialog extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.joindialog);
 //        ㅇㅏㄴ녕하세요꼬추
+//        네 안냐새요 짬쥐
     }
 }
