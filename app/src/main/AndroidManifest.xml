@@ -27,7 +27,10 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
+        <activity android:name=".Join" android:label="회원가입"/>
+        <activity android:name=".JoinDialog" android:label="회원가입 다이얼로그"/>
     </application>
 
 </manifest>

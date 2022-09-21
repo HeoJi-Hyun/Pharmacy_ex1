@@ -9,38 +9,38 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="99dp"
+        android:layout_height="86dp"
         android:orientation="vertical"></LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="199dp"
-        android:layout_height="242dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/약국번가로고_텍스트포함"
-        tools:visibility="visible" />
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        app:srcCompat="@drawable/pharmacylogowithtext" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="56dp"
         android:orientation="vertical"></LinearLayout>
 
     <EditText
-        android:id="@+id/tvId1"
+        android:id="@+id/edId1"
         android:layout_width="316dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8sp"
+        android:backgroundTint="#FE730E"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="아이디" />
 
     <EditText
-        android:id="@+id/tvPw1"
+        android:id="@+id/edPw1"
         android:layout_width="316dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8sp"
+        android:backgroundTint="#FE730E"
         android:ems="10"
         android:inputType="textPassword"
         android:text="비밀번호" />
