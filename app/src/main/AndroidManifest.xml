@@ -32,6 +32,7 @@
         <activity android:name=".Join" android:label="회원가입"/>
         <activity android:name=".JoinDialog" android:label="회원가입 다이얼로그"/>
         <activity android:name=".Home" android:label="홈화면"/>
+        <activity android:name=".Alarm" android:label="알람기능"/>
     </application>
 
 </manifest>
