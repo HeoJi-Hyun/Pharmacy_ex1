@@ -13,9 +13,6 @@ public class Join extends MainActivity{
 
     EditText edittextId2, edittextPw2;
     Button btnJoin2;
-    View loginView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +28,10 @@ public class Join extends MainActivity{
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(Join.this, MainActivity.class);
+                intent1.putExtra("id", Integer.parseInt(edittextId2.getText().toString()));
+                intent1.putExtra("pass", Integer.parseInt(edittextPw2.getText().toString()));
                 startActivity(intent1);
             }
         });
-
-
-
-
     }
 }

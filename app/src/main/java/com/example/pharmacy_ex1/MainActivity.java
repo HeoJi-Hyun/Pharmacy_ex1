@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Join.class);
                 startActivity(intent);
-
             }
         });
 
@@ -47,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 if(edittextId1.getText().toString().equals(v1.toString())&&edittextPw1.getText().toString().equals(v2.toString())){
 
                     Intent intent1 = new Intent(MainActivity.this,Home.class);
-//                      -> 나중에 홈화면으로 넘어가게
-
 
                     startActivity(intent1);
                 }
