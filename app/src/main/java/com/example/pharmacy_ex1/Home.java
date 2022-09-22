@@ -1,8 +1,9 @@
 package com.example.pharmacy_ex1;
 
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Home extends MainActivity{
+public class Home extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
