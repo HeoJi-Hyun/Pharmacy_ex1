@@ -46,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(edittextId1.getText().toString().equals(v1.toString())&&edittextPw1.getText().toString().equals(v2.toString())){
 
-                    //Intent intent1 = new Intent(MainActivity.this,MainActivity3.class);
+                    Intent intent1 = new Intent(MainActivity.this,Home.class);
+//                      -> 나중에 홈화면으로 넘어가게
 
 
                     startActivity(intent1);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(),"학번 혹은 비밀번호를 확인하세요",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"아이디 혹은 비밀번호를 확인하세요",Toast.LENGTH_SHORT).show();
                 }
             }
         });

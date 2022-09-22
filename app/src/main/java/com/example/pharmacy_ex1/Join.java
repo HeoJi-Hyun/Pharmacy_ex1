@@ -13,7 +13,7 @@ public class Join extends MainActivity{
 
     EditText edittextId2, edittextPw2;
     Button btnJoin2;
-    View dialogView;
+    View loginView;
 
 
 
@@ -30,9 +30,8 @@ public class Join extends MainActivity{
         btnJoin2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialogView = (View) View.inflate(Join.this, R.layout.joindialog, null);
-                AlertDialog.Builder dlg = new AlertDialog.Builder(Join.this);
-                dlg.setView(dialogView);
+                Intent intent1 = new Intent(Join.this, MainActivity.class);
+                startActivity(intent1);
             }
         });
 
