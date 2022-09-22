@@ -9,4 +9,6 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
     }
+
+//    어라라..
 }
