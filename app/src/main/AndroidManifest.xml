@@ -33,6 +33,10 @@
         <activity android:name=".JoinDialog" android:label="회원가입 다이얼로그"/>
         <activity android:name=".Home" android:label="홈화면"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
+        <receiver android:name=".Alarm_Reciver" />
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true"></service>
     </application>
 
 </manifest>
