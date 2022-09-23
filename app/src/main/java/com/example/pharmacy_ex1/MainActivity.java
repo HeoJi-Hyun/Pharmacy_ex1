@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(edittextId1.getText().toString().equals(v1.toString())&&edittextPw1.getText().toString().equals(v2.toString())){
 
-                    Intent intent1 = new Intent(MainActivity.this,Home.class);
+                    Intent intent1 = new Intent(MainActivity.this, Map.class);
 
                     startActivity(intent1);
                 }

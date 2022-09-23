@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--    <uses-permission android:name="android.permission.CAMERA"/>-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
 
     <application
         android:allowBackup="true"
@@ -24,19 +24,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyAO_8BOtx29d6jtvpncvmqoYvpa-8APO_8"/>
-
         </activity>
         <activity android:name=".Join" android:label="회원가입"/>
         <activity android:name=".JoinDialog" android:label="회원가입 다이얼로그"/>
-        <activity android:name=".Home" android:label="홈화면"/>
+        <activity android:name=".Map" android:label="지도"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
         <receiver android:name=".Alarm_Reciver" />
+
         <service
             android:name=".RingtonePlayingService"
-            android:enabled="true"></service>
+            android:enabled="true"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC-F45JLzJoSY5rxgIfBDOB72PYtCNHIUg"/>
     </application>
 
 </manifest>
