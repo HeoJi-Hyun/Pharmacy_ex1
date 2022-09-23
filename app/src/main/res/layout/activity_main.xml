@@ -8,22 +8,11 @@
     tools:context=".MainActivity" >
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:orientation="vertical"></LinearLayout>
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="236dp"
         app:srcCompat="@drawable/pharmacylogowithtext" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="vertical"></LinearLayout>
 
     <EditText
         android:id="@+id/edId1"
@@ -47,11 +36,6 @@
         android:hint="비밀번호를 입력하세요."
         android:inputType="textPassword" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:orientation="vertical"></LinearLayout>
-
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="128dp"
@@ -70,4 +54,16 @@
         android:textColor="#FE730E"
         app:strokeColor="#FE730E"
         app:strokeWidth="2sp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="봉수진꺼(알람)" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인화면 바로가" />
 </LinearLayout>
