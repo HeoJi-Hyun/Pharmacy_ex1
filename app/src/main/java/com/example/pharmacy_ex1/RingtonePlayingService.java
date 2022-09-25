@@ -58,19 +58,19 @@ public class RingtonePlayingService extends Service {
         assert getState != null;
         switch (getState) {
             case "alarm on":
-                startId = 1;
+                startId = Service.START_STICKY;
                 break;
             case "alarm off":
-                startId = 0;
+                startId = Service.START_STICKY_COMPATIBILITY;
                 break;
             default:
-                startId = 0;
+                startId = Service.START_STICKY_COMPATIBILITY;
                 break;
     }
         // 알람음 재생 X , 알람음 시작 클릭
         if(!this.isRunning && startId == 1) {
 
-//            mediaPlayer = MediaPlayer.create(this,R.raw.ouu);
+            mediaPlayer = MediaPlayer.create(this,R.raw.day);
             mediaPlayer.start();
 
             this.isRunning = true;
