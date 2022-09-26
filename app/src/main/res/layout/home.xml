@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".Home">
     <!--    tools:context=".Home"-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -22,10 +32,10 @@
                     android:layout_height="match_parent" />
             </FrameLayout>
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="275dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -79,7 +89,7 @@
 
                 <FrameLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="5dp">
 
@@ -111,15 +121,13 @@
                 </FrameLayout>
             </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/containers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        </LinearLayout>
+
+
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigationview"
+        android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

@@ -4,9 +4,9 @@ import android.app.Activity;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 
@@ -17,43 +17,46 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
 
 public class Home extends Activity  implements OnMapReadyCallback{
 
-    Fragment cameraFragment;
-    Fragment searchFragment;
-    Fragment reviewFragment;
+private Frag1 frag1;
+private Frag2 frag2;
+private Frag3 frag3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+        frag1 = new Frag1();
+        frag2 = new Frag2();
+        frag3 = new Frag3();
 
-
-
-       getFragmentManager().beginTransaction().replace(R.id.containers,cameraFragment).commit();
-
-       NavigationBarView navigationBarView = findViewById(R.id.bottom_navigationview);
-       navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-           @Override
-           public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-               switch (item.getItemId()){
-                   case R.id.bottom_camera:
-                       getFragmentManager().beginTransaction().replace(R.id.containers, cameraFragment).commit();
-                       return true;
-                   case R.id.bottom_search:
-                       getFragmentManager().beginTransaction().replace(R.id.containers, searchFragment).commit();
-                       return true;
-                   case R.id.bottom_review:
-                       getFragmentManager().beginTransaction().replace(R.id.containers, reviewFragment).commit();
-                       return true;
-               }
-               return false;
-           }
-       });
+//        FragmentManager manager = getSupportFragmentManager();
+//
+//        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag1).commit();
+//        BottomNavigationView bottom_menu = findViewById(R.id.bottom_menu);
+//        bottom_menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.bottom_search:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag1).commit();
+//                        return true;
+//                    case R.id.bottom_camera:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag2).commit();
+//                        return true;
+//                    case R.id.bottom_review:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag3).commit();
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
+//    }
+//    private FragmentManager getSupportFragmentManager() {
+//        return null;
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
