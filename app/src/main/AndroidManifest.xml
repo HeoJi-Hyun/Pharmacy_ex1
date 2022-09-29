@@ -26,12 +26,9 @@
 
         </activity>
         <activity android:name=".Join" android:label="회원가입"/>
-        <activity android:name=".JoinDialog" android:label="회원가입 다이얼로그"/>
         <activity android:name=".Home" android:label="지도"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
-        <activity android:name=".Frag2" android:label=""/>
-        <activity android:name=".Frag1" android:label=""/>
-        <activity android:name=".Frag3" android:label=""/>
+        <activity android:name=".Prov" android:label="약 정보 제공"/>
 
         <receiver android:name=".Alarm_Reciver" />
 

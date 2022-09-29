@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
     android:orientation="vertical"
     app:layoutDescription="@xml/ckeck_list_scene">
 
@@ -11,28 +12,66 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ToggleButton
-            android:id="@+id/toggleButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:layout_height="match_parent"
+            android:background="#FF9800"
+            android:backgroundTint="#FF9800"
+            android:orientation="horizontal">
 
-        <ToggleButton
-            android:id="@+id/toggleButton5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="뒤로" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="검색창" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton7"
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="검색" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

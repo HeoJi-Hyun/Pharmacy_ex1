@@ -2,13 +2,13 @@ package com.example.pharmacy_ex1;
 
 import android.app.Activity;
 
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -25,6 +25,7 @@ private Frag1 frag1;
 private Frag2 frag2;
 private Frag3 frag3;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,30 +34,30 @@ private Frag3 frag3;
         frag2 = new Frag2();
         frag3 = new Frag3();
 
-//        FragmentManager manager = getSupportFragmentManager();
-//
-//        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag1).commit();
-//        BottomNavigationView bottom_menu = findViewById(R.id.bottom_menu);
-//        bottom_menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                switch (item.getItemId()){
-//                    case R.id.bottom_search:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag1).commit();
-//                        return true;
-//                    case R.id.bottom_camera:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag2).commit();
-//                        return true;
-//                    case R.id.bottom_review:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container, frag3).commit();
-//                        return true;
-//                }
-//                return false;
-//            }
-//        });
-//    }
-//    private FragmentManager getSupportFragmentManager() {
-//        return null;
+        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag1).commit();
+        BottomNavigationView bottom_menu = findViewById(R.id.bottom_menu);
+        bottom_menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.bottom_search:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag1).commit();
+                        return true;
+                    case R.id.bottom_camera:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag2).commit();
+                        return true;
+                    case R.id.bottom_review:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag3).commit();
+                        return true;
+                }
+                return false;
+            }
+        });
+    }
+
+    private FragmentManager getSupportFragmentManager() {
+        return null;
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
