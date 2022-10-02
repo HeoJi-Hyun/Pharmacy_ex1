@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/ckeck_list_scene">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:background="@color/pharmacy"
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="4sp">
+
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/search_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:iconifiedByDefault="false"-->
+<!--                app:queryHint="검색어를 입력하시오" />-->
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:orientation="vertical">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="알츠하이머병에서의 치매"
+                    android:textOn="치매 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="노년백내장"
+                    android:textOn="백내장 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="폐렴"
+                    android:textOn="폐렴 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="뇌경색증"
+                    android:textOn="뇌경색증 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton15"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="폐렴"
+                    android:textOn="페렴 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton16"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="노년백내장"
+                    android:textOn="노년백내장 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton17"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="알츠하이머병에서의 치매"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="골절"
+                    android:textOn="골절 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="척추병증"
+                    android:textOn="척추병증 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="무릎 관절증"
+                    android:textOn="무릎 관절증 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="당뇨병"
+                    android:textOn="당뇨병 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/button_round"
+                    android:minHeight="48dp"
+                    android:shadowColor="#FF9800"
+                    android:text="ToggleButton"
+                    android:textColor="#000000"
+                    android:textOff="담석증"
+                    android:textOn="담석증 O"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

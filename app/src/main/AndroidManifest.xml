@@ -29,6 +29,7 @@
         <activity android:name=".Home" android:label="지도"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
         <activity android:name=".Prov" android:label="약 정보 제공"/>
+        <activity android:name=".Chek" android:label="체크리스트"/>
 
         <receiver android:name=".Alarm_Reciver" />
 
