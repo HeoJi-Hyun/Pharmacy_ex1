@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -29,26 +30,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/pharmacy"
         android:ems="10"
         android:hint="아이디를 입력하세요."
-        android:inputType="textPersonName"
+        android:textColorHint="@color/pharmacy"
         android:minHeight="48dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_margin="10sp"
-        android:text="사용 가능한 아이디 입니다."
-        android:textColor="#FE730E" />
 
     <EditText
         android:id="@+id/edPw2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
+        android:backgroundTint="@color/pharmacy"
         android:ems="10"
+        android:hint="비밀번호를 입력해주세요."
+        android:textColorHint="@color/pharmacy"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <LinearLayout
@@ -67,64 +65,60 @@
             android:orientation="horizontal">
 
             <ToggleButton
-                android:id="@+id/toggleButton2"
+                android:id="@+id/toggleButton18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#C8C8C8"
                 android:text="ToggleButton"
-                android:textOff="질병이름" />
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ToggleButton
-                android:id="@+id/toggleButton3"
+                android:id="@+id/toggleButton14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                android:text="ToggleButton"
-                android:textOff="질병이름" />
+                android:backgroundTint="#C8C8C8"
+                android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton4"
+                android:id="@+id/toggleButton12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                android:text="ToggleButton"
-                android:textOff="질병이름" />
+                android:backgroundTint="#C8C8C8"
+                android:text="ToggleButton" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <ToggleButton
-                android:id="@+id/toggleButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                android:text="ToggleButton"
-                android:textOff="질병이름" />
-
-            <ToggleButton
-                android:id="@+id/toggleButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                android:text="ToggleButton"
-                android:textOff="질병이름" />
 
             <ToggleButton
                 android:id="@+id/toggleButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                android:text="ToggleButton"
-                android:textOff="질병이름" />
+                android:backgroundTint="#C8C8C8"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C8C8C8"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C8C8C8"
+                android:text="ToggleButton" />
         </LinearLayout>
     </LinearLayout>
 

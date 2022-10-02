@@ -58,7 +58,7 @@ public class RingtonePlayingService extends Service {
         assert getState != null;
         switch (getState) {
             case "alarm on":
-                startId = Service.START_STICKY;
+                startId = Service.START_REDELIVER_INTENT;
                 break;
             case "alarm off":
                 startId = Service.START_STICKY_COMPATIBILITY;
