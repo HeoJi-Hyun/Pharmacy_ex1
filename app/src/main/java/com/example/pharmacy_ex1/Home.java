@@ -1,11 +1,15 @@
 package com.example.pharmacy_ex1;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -21,44 +25,46 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Home extends Activity  implements OnMapReadyCallback{
 
-private Frag1 frag1;
-private Frag2 frag2;
-private Frag3 frag3;
+ Button btnala, btnprov, btnchek;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
-        frag1 = new Frag1();
-        frag2 = new Frag2();
-        frag3 = new Frag3();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag1).commit();
-        BottomNavigationView bottom_menu = findViewById(R.id.bottom_menu);
-        bottom_menu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        btnala = (Button)findViewById(R.id.homeAla);
+        btnprov = (Button)findViewById(R.id.homeProv);
+        btnchek = (Button)findViewById(R.id.homeChek);
+
+        btnala.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            public void onClick(View view) {
+                Intent intent3 = new Intent(Home.this, Alarm.class);
 
-                switch (item.getItemId()){
-                    case R.id.bottom_search:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag1).commit();
-                        return true;
-                    case R.id.bottom_camera:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag2).commit();
-                        return true;
-                    case R.id.bottom_review:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.home_frame, frag3).commit();
-                        return true;
-                }
-                return false;
+                startActivity(intent3);
             }
         });
+        btnchek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(Home.this, Chek.class);
+
+                startActivity(intent4);
+            }
+        });
+        btnprov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(Home.this, Prov.class);
+
+                startActivity(intent5);
+            }
+        });
+
     }
 
-    private FragmentManager getSupportFragmentManager() {
-        return null;
-    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         LatLng location = new LatLng(37.485284,126.901451);
@@ -70,4 +76,6 @@ private Frag3 frag3;
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location,16));
     }
+
+
 }
