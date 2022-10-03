@@ -32,6 +32,7 @@
         <activity android:name=".Chek" android:label="체크리스트"/>
         <activity android:name=".Prov2" android:label="까스활명수"/>
         <activity android:name=".Medicine" android:label="약정보제공"/>
+        <activity android:name=".Auto" android:label="자동완성이 가미된 검색창"/>
 
         <receiver android:name=".Alarm_Reciver" />
 

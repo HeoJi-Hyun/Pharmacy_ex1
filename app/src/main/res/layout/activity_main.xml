@@ -9,11 +9,23 @@
     tools:context=".MainActivity" >
 
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="236dp"
-        app:srcCompat="@drawable/pharmacylogowithtext" />
+        android:layout_height="66dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="312dp"
+            android:layout_height="254dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_2" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/edId1"
@@ -24,7 +36,8 @@
         android:backgroundTint="#FE730E"
         android:ems="10"
         android:hint="아이디를 입력하세요."
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/edPw1"
@@ -35,7 +48,8 @@
         android:backgroundTint="#FE730E"
         android:ems="10"
         android:hint="비밀번호를 입력하세요."
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -67,4 +81,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="메인화면 바로가" />
+
+    <Button
+        android:id="@+id/btnAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자동완성 바로가" />
 </LinearLayout>
