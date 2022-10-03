@@ -8,6 +8,107 @@
     tools:context=".Prov2Frag2">
 
     <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFrag223"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="용법"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag224"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1. 류마티양 관절염, 골관절염, 강직성 척추염"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag2325"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="-성인: 나프록센으로서 1회 250~500㎎ 1일 2회(12시간마다) 경구투여하십시오.[복용하십시오.]"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag226"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2. 급성통풍"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag227"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="-성인: 나프록센으로서 초회량[처음 복용량]으로 750㎎을 경구투여하고 발작이 소실[없어짐]될 때까지 8시간간격으로 250㎎을 경구 투여하십시오. [복용하십시오.] "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag228"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3. 골격근장애, 수술후 동통[통증], 발치[이를 뽑음]후 동통[통증], 월경곤란증, 건염[힘줄염], 활액[윤활]낭염"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag229"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="성인: 나프록센으로서 초회량[처음 복용량]으로 500㎎을 경구투여한 후 6~8시간간격 으로 250㎎씩 투여하십시오. 1일 총용량이 1,250㎎을 초과하지 않도록 하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag2221"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4. 편두통"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="성인 : 나프록센으로서 초회량[처음 복용량]으로 750㎎을 경구투여 하십시오. [복용하십시오.]  필요하면 1일 250-500㎎을 더 투여할 수 있으며 초회량[처음 복용량]의 투여 30분후에 투여하십시오. "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag2223"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1일 총용량이 1250㎎을 초과하지 않도록 하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag2224"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="연령[나이], 증상에 따라 적절히 증감하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

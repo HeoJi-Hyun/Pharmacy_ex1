@@ -6,12 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
+
     <TextView
         android:id="@+id/tvProv21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="까스활명수"
+        android:text="탁센"
         android:textColor="@color/pharmacy"
         android:textSize="40dp"
         android:textStyle="bold" />
@@ -22,15 +23,17 @@
 
         <ImageView
             android:id="@+id/imageProv21"
-            android:layout_width="175dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/medi1" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/xkrxkr" />
 
         <ImageView
             android:id="@+id/imageProv22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/medi2" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ejdrlejr" />
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout

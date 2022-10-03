@@ -9,5 +9,313 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/tvFrag231"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="주의사항"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag232"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1. 경고"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag233"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1) 매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 합니다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있습니다."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag234"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2) 위장관[창자]계 위험: 이 약을 포함한 비스테로이드성 소염[항염]진통제는 위 또는 장관[창자]의 출혈, 궤양 및 천공[뚫림]을 포함한 중대한 위장관[창자]계 이상반응의 위험을 증가시킬 수 있으며, 이는 치명적일 수 있습니다. 이러한 이상반응은 투여 기간 동안에 경고 증상 없이 발생할 수 있습니다. 고령자[노인]는 중대한 위장관[창자]계 이상반응의 위험이 더 클 수 있습니다. 투여 기간이 길어질수록 중대한 위장관[창자]계 이상반응의 발생 가능성이 증가될 수 있으나 단기 투여시 이러한 위험이 완전히 배제되는 것은 아닙니다."
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvFrag235"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2. 다음 환자에는 투여하지 마십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag236"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1) 소화성궤양 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag237"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2) 심한 혈액이상 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag238"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3) 심한 간장애 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag239"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4) 심한 심기능부전 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag240"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5) 심한 신장애[신장장애] 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag241"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6) 심한 고혈압 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag242"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3. 다음 환자에는 신중히 투여하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag245"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1) 소화성궤양의 병력이 있는 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag246"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2) 혈액이상 또는 그의 병력이 있는 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag247"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3) 출혈경향이 있는 환자 (혈소판 기능저하가 나타날 수 있습니다.)"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag248"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4) 간장애 또는 그의 병력이 있는 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag249"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5) 신장애[신장장애] 또는 그의 병력이 있는 환자 및 신혈류량이 저하된 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag250"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6) 심기능 장애 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag251"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7) 고혈압 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag252"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8) 과민증의 병력이 있는 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag253"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9) 기관지천식 환자"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag254"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10) 고령자[노인]"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvFrag255"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4. 일반적 주의"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag256"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1) 이 약을 투여하기 전에 이 약 및 다른 대체 치료법의 잠재적인 위험성과 유익성을 고려해야 합니다. 이 약은 각 환자의 치료 목적과 일치하도록 가능한 최단 기간동안 최소 유효용량으로 투여하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag257"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2) 소염[항염]진통제에 의한 치료는 원인요법이 아닌 대증요법[증상별로 치료하는 방법]임에 유의하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag258"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3) 위장관[창자]계 이상반응 : 이 약을 포함한 비스테로이드성 소염[항염]진통제를 궤양성 질환 또는 위장관[창자] 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 합니다. 소화성 궤양 질환 및/또는 위장관[창자] 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염[항염]진통제 투여시 위장관[창자] 출혈의 발생 위험이 10배 이상 증가하였습니다. 위장관[창자]계 출혈을 증가시키는 다른 위험인자로는 경구용 코르티코스테로이드 또는 항응고제 병용[함께 복용], 비스테로이드성 소염[항염]진통제의 장기 사용 알콜 섭취, 고령, 허약한 건강상태 등이 있습니다. 치명적인 위장관[창자]계 이상반응에 대한 자발적 보고의 대부분은 고령자[노인] 및 허약자에 대한 것이므로, 이러한 환자에게 이 약을 투여시 특별히 주의하여야 합니다."
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvFrag259"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4) 비스테로이드성 소염[항염]진통제를 장기간 복용시 신장[콩팥]유두괴사나 기타 신장[콩팥] 손상이 일어날 수 있다. 또한, 신혈류를 유지하는데 프로스타글란딘의 역할이 중요하므로, 심부전 환자, 신기능 부전 환자, 간기능 부전 환자, 이뇨제나 ACE 저해제[억제제]를 투여 중인 환자, 고령자[노인] 등에서는 특별한 주의가 필요합니다. 투약을 중단하면 대부분 치료 전 상태로 회복됩니다."
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvFrag260"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5. 상호작용"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag261"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1) 다른 비스테로이드성 소염[항염]진통제(NSAIDs) 및 나프록센 유도체와 병용[함께 복용]할 경우 이상반응의 위험이 증가할 수 있으므로 병용[함께 복용]하지 않습니다."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag262"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2) 히단토인계 항간질제, 설파제, 설포닐요소계 혈당강하제: 이러한 약물과 병용[함께 복용]투여시 그 작용을 증강시킬 수 있으므로 충분히 관찰하고 신중히 투여하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag263"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6. 고령자[노인]에 대한 투여"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvFrag264"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="일반적으로 고령자[노인]는 소염[항염]진통제에 의한 소화관의 궤양, 출혈 등의 발현[드러냄]이 높으므로 소량부터 투여를 시작하여 필요한 최소량으로 투여하고 이상반응의 발현[드러냄]에 특히 유의하는 등 환자의 상태를 관찰하면서 신중히 투여하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvFrag265"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7. 과량투여시의 처치"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag266"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="과량투여시 졸음, 가슴쓰림, 소화불량, 구역, 구토가 나타나며 이러한 경우에는 위세척을 하고 활성탄을 사용하여 혈장농도를 줄여야 합니다."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag267"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8. 보관 및 취급상의 주의사항"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag268"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="다른 용기에 바꾸어 넣는 것은 사고원인이 되거나 품질유지 면에서 바람직하지 않으므로 이를 주의하십시오."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
