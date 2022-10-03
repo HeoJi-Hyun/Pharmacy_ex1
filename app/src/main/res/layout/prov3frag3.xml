@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prov3Frag3">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Prov1Frag2">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</FrameLayout>
+            <TextView
+                android:id="@+id/tvFrag3.31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="주의사항"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag3.32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1. 다음과 같은 사람은 이 약을 복용하지 말 것."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3개월 미만의 영아"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 한의사, 치과의사, 약사, 한약사와 상의할 것."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1) 다른 약물을 투여 받고 있는 환자  2) 고령자(일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의할 것.)  3) 현저하게 위장이 허약한 환자(식욕부진, 위부불쾌감, 구역, 구토, 설사 등이 나타날 수 있다.)  4) 식욕부진, 구역, 구토의 증상이 있는 환자(증상이 악화될 수 있다.)  5) 1세 이하의 영아"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 다음과 같은 경우 이 약의 복용을 즉각 중지하고 의사, 한의사, 치과의사, 약사, 한약사와 상의할 것. 상담시 가능한한 이 첨부문서를 소지할 것." />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

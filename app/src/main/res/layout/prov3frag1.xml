@@ -1,14 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Prov3Frag1">
+    android:background="@color/white"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".Prov1Frag1">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvFrag3.11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="성분정보"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag3.12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ginseng인삼, Honey꿀, Poria복령, Rehmannia Root생지황즙　"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="효능"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag3.14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="다음의 경우의 자양강장  : 병중병후, 허약체질, 육체피로, 권태, 갱년기 장애"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="복약정보"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag3.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1개월 이상 투여해도 증상 개선이 없는 경우 전문가와 상의하세요."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="발진, 발적, 가려움증 등의 증상이 나타날 경우 전문가와 상의하세요."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가능한 습기가 적고 서늘한 곳에 보관하세요."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag3.19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="과량으로 투여하지 않도록 주의하세요."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
