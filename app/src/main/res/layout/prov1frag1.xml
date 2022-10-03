@@ -18,7 +18,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/tvFrag11"
+                android:id="@+id/tvFrag1.11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -28,7 +28,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFrag12"
+                android:id="@+id/tvFrag1.12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -39,7 +39,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/tvFrag13"
+                android:id="@+id/tvFrag1.13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -50,7 +50,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFrag14"
+                android:id="@+id/tvFrag1.14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="1. 주효능·효과 : 감기로 인한 발열 및 동통(통증), 두통, 신경통, 근육통, 월경통, 염좌통(삔 통증) "
@@ -58,7 +58,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/tvFrag15"
+                android:id="@+id/tvFrag1.15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -67,7 +67,7 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/tvFrag16"
+                android:id="@+id/tvFrag1.16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -78,7 +78,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFrag17"
+                android:id="@+id/tvFrag1.17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="-충분한 물과 함께 투여하세요."
@@ -86,21 +86,21 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/tvFrag18"
+                android:id="@+id/tvFrag1.18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:text="-정기적으로 술을 마시는 사람은 이 약 투여전 반드시 전문가와 상의하세요."/>
             <TextView
-                android:id="@+id/tvFrag19"
+                android:id="@+id/tvFrag1.19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:text="-황달 등 간기능 이상징후가 나타날 경우에는 전문가와 상의하세요."/>
             <TextView
-                android:id="@+id/tvFrag111"
+                android:id="@+id/tvFrag1.110"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
