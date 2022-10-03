@@ -132,9 +132,10 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@color/pharmacy"
+            android:background="@drawable/buttonitem"
             android:text="알람"
             android:textColor="@color/white"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         <Button
@@ -144,8 +145,9 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@color/pharmacy"
+            android:background="@drawable/buttonitem"
             android:text="체크리스트"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         <Button
@@ -155,8 +157,9 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@color/pharmacy"
+            android:background="@drawable/buttonitem"
             android:text="약정보"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck" />
     </LinearLayout>
 
