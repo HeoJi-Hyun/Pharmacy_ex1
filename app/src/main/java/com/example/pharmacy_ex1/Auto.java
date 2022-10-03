@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CheckedTextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class Auto extends Activity {
     private List<String> list;
     AutoCompleteTextView auto;
     Button btn1;
+    CheckedTextView tv1, tv2, tv3;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,7 +33,9 @@ public class Auto extends Activity {
 
         auto = (AutoCompleteTextView) findViewById(R.id.autoSearch);
         btn1 = (Button)findViewById(R.id.btnChek1);
-
+        tv1 = (CheckedTextView)findViewById(R.id.autoText1);
+        tv2 = (CheckedTextView)findViewById(R.id.autoText2);
+        tv3 = (CheckedTextView)findViewById(R.id.autoText3);
         // 리스트를 생성한다.
         list = new ArrayList<String>();
 
@@ -71,6 +75,30 @@ public class Auto extends Activity {
                 else{
                     Toast.makeText(getApplicationContext(), "해당 제품이 없습니다", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent6 = new Intent(Auto.this, Prov1.class);
+
+                startActivity(intent6);
+            }
+        });
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent7 = new Intent(Auto.this, Prov2.class);
+
+                startActivity(intent7);
+            }
+        });
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent8 = new Intent(Auto.this, Prov3.class);
+
+                startActivity(intent8);
             }
         });
 
