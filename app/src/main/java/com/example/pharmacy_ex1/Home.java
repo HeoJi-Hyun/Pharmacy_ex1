@@ -47,7 +47,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnprov.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent5 = new Intent(Home.this, Medicine.class);
+                Intent intent5 = new Intent(Home.this, Auto.class);
 
                 startActivity(intent5);
             }

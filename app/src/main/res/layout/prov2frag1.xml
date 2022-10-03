@@ -8,6 +8,112 @@
     tools:context=".Prov2Frag1">
 
     <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvFrag21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="성분정보"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Naproxen　나프록센　250mg"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="효능"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 주효능효과
+류마티양 관절염, 골관절염(퇴행성 관절질환), 강직성 척추염, 건염[힘줄염], 급성 통풍, 월경곤란증"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2. 다음 질환에도 사용할 수 있습니다.
+활액[윤활]낭염, 골격근장애(염좌[삠], 좌상[타박상], 외상[상처], 요천통[허리통증]), 수술 후 동통[통증], 편두통, 발치[이를 뽑음]후 동통[통증] "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="복약정보"
+                android:textColor="@color/pharmacy"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-충분한 물과 함께 투여하세요."
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvFrag28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="-위장장애가 나타날 수 있어요. 증상이 심하면 전문가와 상의하세요."/>
+            <TextView
+                android:id="@+id/tvFrag29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="-정기적으로 술을 마시는 사람은 이 약 투여전 반드시 전문가와 상의하세요."/>
+            <TextView
+                android:id="@+id/tvFrag221"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="-임산부 및 임신 계획이 있는 여성은 투여전 반드시 전문가와 상의하세요."/>
+            <TextView
+                android:id="@+id/tvFrag222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:text="-전문가와 상의없이 다른 소염진통제와 병용하지 마세요."/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
