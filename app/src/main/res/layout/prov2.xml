@@ -23,17 +23,15 @@
 
         <ImageView
             android:id="@+id/imageProv21"
-            android:layout_width="wrap_content"
+            android:layout_width="207dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             app:srcCompat="@drawable/xkrxkr" />
 
         <ImageView
             android:id="@+id/imageProv22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ejdrlejr" />
+            app:srcCompat="@drawable/medi3" />
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout

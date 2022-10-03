@@ -33,7 +33,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/btnAuto1"
+            android:id="@+id/btnChek1"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_round"

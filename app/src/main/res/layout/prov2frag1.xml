@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_margin="15dp"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Prov2Frag1">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvFrag21"
@@ -89,30 +90,33 @@
                 android:id="@+id/tvFrag28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="-위장장애가 나타날 수 있어요. 증상이 심하면 전문가와 상의하세요."
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:text="-위장장애가 나타날 수 있어요. 증상이 심하면 전문가와 상의하세요."/>
+                android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/tvFrag29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="-정기적으로 술을 마시는 사람은 이 약 투여전 반드시 전문가와 상의하세요."
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:text="-정기적으로 술을 마시는 사람은 이 약 투여전 반드시 전문가와 상의하세요."/>
+                android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/tvFrag221"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="-임산부 및 임신 계획이 있는 여성은 투여전 반드시 전문가와 상의하세요."
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:text="-임산부 및 임신 계획이 있는 여성은 투여전 반드시 전문가와 상의하세요."/>
+                android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/tvFrag222"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="-전문가와 상의없이 다른 소염진통제와 병용하지 마세요."
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:text="-전문가와 상의없이 다른 소염진통제와 병용하지 마세요."/>
+                android:textSize="25sp" />
         </LinearLayout>
     </ScrollView>
 

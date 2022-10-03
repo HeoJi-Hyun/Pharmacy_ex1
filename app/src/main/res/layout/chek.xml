@@ -20,7 +20,8 @@
             android:background="@color/pharmacy"
             android:orientation="horizontal"
             android:paddingTop="10sp"
-            android:paddingBottom="4sp">
+            android:paddingBottom="4sp"
+            android:completionThreshold="1">
 
             <ImageView
                 android:id="@+id/imageChek1"
@@ -29,20 +30,16 @@
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/search" />
 
-            <EditText
-                android:id="@+id/editchek1"
+            <AutoCompleteTextView
+                android:id="@+id/autoChek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:ems="10"
                 android:hint="질병을 입력하세요."
-                android:inputType="textPersonName"
-                android:minHeight="48dp"
-                android:textColorHint="#C2FFFFFF"
-                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                android:minHeight="48dp" />
 
             <Button
-                android:id="@+id/btnAuto1"
+                android:id="@+id/btnChek1"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_round"
@@ -72,7 +69,7 @@
                     android:text="치매"
                     android:textColor="#000000"
                     android:textOff="치매"
-                    android:textOn="치매"
+                    android:textOn="치매 O"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -85,7 +82,7 @@
                     android:shadowColor="#FF9800"
                     android:textColor="#000000"
                     android:textOff="노년백내장"
-                    android:textOn="노년백내장O"
+                    android:textOn="노년백내장 O"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -104,7 +101,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton7"
+                    android:id="@+id/tog4"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -118,7 +115,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton15"
+                    android:id="@+id/tog5"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -126,13 +123,13 @@
                     android:shadowColor="#FF9800"
                     android:text="ToggleButton"
                     android:textColor="#000000"
-                    android:textOff="폐렴"
-                    android:textOn="페렴 O"
+                    android:textOff="신장병"
+                    android:textOn="신장병 O"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton16"
+                    android:id="@+id/tog6"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -140,13 +137,13 @@
                     android:shadowColor="#FF9800"
                     android:text="ToggleButton"
                     android:textColor="#000000"
-                    android:textOff="노년백내장"
-                    android:textOn="노년백내장 O"
+                    android:textOff="어지럼증"
+                    android:textOn="어지럼증 O"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton17"
+                    android:id="@+id/tog7"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -154,12 +151,13 @@
                     android:shadowColor="#FF9800"
                     android:text="ToggleButton"
                     android:textColor="#000000"
-                    android:textOff="알츠하이머병에서의 치매"
+                    android:textOff="심부전"
+                    android:textOn="심부전 O"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton8"
+                    android:id="@+id/tog8"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -173,7 +171,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton9"
+                    android:id="@+id/tog9"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -187,7 +185,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton10"
+                    android:id="@+id/tog10"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -201,7 +199,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton11"
+                    android:id="@+id/tog11"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"
@@ -215,7 +213,7 @@
                     android:textStyle="bold" />
 
                 <ToggleButton
-                    android:id="@+id/toggleButton13"
+                    android:id="@+id/tog12"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_margin="5sp"

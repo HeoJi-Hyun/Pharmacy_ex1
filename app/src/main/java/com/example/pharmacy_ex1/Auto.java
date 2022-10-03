@@ -30,7 +30,7 @@ public class Auto extends Activity {
         setContentView(R.layout.auto0);
 
         auto = (AutoCompleteTextView) findViewById(R.id.autoSearch);
-        btn1 = (Button)findViewById(R.id.btnAuto1);
+        btn1 = (Button)findViewById(R.id.btnChek1);
 
         // 리스트를 생성한다.
         list = new ArrayList<String>();
