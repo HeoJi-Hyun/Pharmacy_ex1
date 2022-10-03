@@ -23,12 +23,8 @@ public class MainActivity extends AppCompatActivity {
         edittextId1 = (EditText) findViewById(R.id.edId1);
         edittextPw1 = (EditText) findViewById(R.id.edPw1);
         btnLogin1 = (Button) findViewById(R.id.btnLogin);
-        btn8 = (Button)findViewById(R.id.btn8);
-        btn9 = (Button)findViewById(R.id.btn9) ;
-
-
-
-
+        btn8 = (Button)findViewById(R.id.btnAla);
+        btn9 = (Button)findViewById(R.id.btnMain) ;
         btnJoin1 = (Button) findViewById(R.id.btnJoin);
 
 

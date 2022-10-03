@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Prov1Frag2">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFrag21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="용법"
+            android:textColor="@color/pharmacy"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFrag22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="만 12세 이상 소아 및 성인:"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvFrag23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-1회 1~2정씩 1일 3-4회 (4-6시간 마다) 필요시 복용한다."
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvFrag24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-1일 최대 4그램 (8정)을 초과하여 복용하지 않는다."
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvFrag25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-이 약은 가능한 최단기간동안 최소 유효용량으로 복용한다."
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

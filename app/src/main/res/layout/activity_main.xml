@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="236dp"
         app:srcCompat="@drawable/pharmacylogowithtext" />
@@ -57,13 +57,13 @@
         app:strokeWidth="2sp" />
 
     <Button
-        android:id="@+id/btn8"
+        android:id="@+id/btnAla"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="봉수진꺼(알람)" />
 
     <Button
-        android:id="@+id/btn9"
+        android:id="@+id/btnMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="메인화면 바로가" />

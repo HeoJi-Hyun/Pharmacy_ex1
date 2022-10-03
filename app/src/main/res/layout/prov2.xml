@@ -2,17 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
-
+    android:background="@color/white">
     <TextView
-        android:id="@+id/tvProv1"
+        android:id="@+id/tvProv21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="타이레놀"
+        android:text="까스활명수"
         android:textColor="@color/pharmacy"
         android:textSize="40dp"
         android:textStyle="bold" />
@@ -22,20 +21,20 @@
         android:layout_height="130dp">
 
         <ImageView
-            android:id="@+id/imageProv1"
+            android:id="@+id/imageProv21"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:src="@drawable/medi1" />
 
         <ImageView
-            android:id="@+id/imageProv2"
+            android:id="@+id/imageProv22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/medi2" />
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs1"
+        android:id="@+id/tabs2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
@@ -47,11 +46,12 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <FrameLayout
-        android:id="@+id/container1"
+        android:id="@+id/container2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tabs1">
+        android:layout_below="@id/tabs2">
 
     </FrameLayout>
+
 
 </LinearLayout>

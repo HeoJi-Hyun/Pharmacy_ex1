@@ -28,8 +28,10 @@
         <activity android:name=".Join" android:label="회원가입"/>
         <activity android:name=".Home" android:label="지도"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
-        <activity android:name=".Prov" android:label="약 정보 제공"/>
+        <activity android:name=".Prov1" android:label="타이레놀"/>
         <activity android:name=".Chek" android:label="체크리스트"/>
+        <activity android:name=".Prov2" android:label="까스활명수"/>
+        <activity android:name=".Medicine" android:label="약정보제공"/>
 
         <receiver android:name=".Alarm_Reciver" />
 

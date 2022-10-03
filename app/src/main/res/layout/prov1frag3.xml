@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".Prov1Frag3">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFrag31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="주의사항"
+            android:textColor="@color/pharmacy"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFrag32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="만 12세 이상 소아 및 성인:"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

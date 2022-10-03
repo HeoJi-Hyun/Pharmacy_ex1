@@ -12,7 +12,7 @@
         android:orientation="vertical"></LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvJoin1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="  회원가입"
@@ -26,7 +26,7 @@
         android:orientation="vertical"></LinearLayout>
 
     <EditText
-        android:id="@+id/edId2"
+        android:id="@+id/edIdJoin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
@@ -65,7 +65,7 @@
             android:orientation="horizontal">
 
             <ToggleButton
-                android:id="@+id/toggleButton18"
+                android:id="@+id/togJoin1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,7 +74,7 @@
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ToggleButton
-                android:id="@+id/toggleButton14"
+                android:id="@+id/togJoin2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,7 +82,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton12"
+                android:id="@+id/togJoin3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,7 @@
             android:orientation="horizontal">
 
             <ToggleButton
-                android:id="@+id/toggleButton4"
+                android:id="@+id/togJoin4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -105,7 +105,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton19"
+                android:id="@+id/togJoin5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -113,7 +113,7 @@
                 android:text="ToggleButton" />
 
             <ToggleButton
-                android:id="@+id/toggleButton20"
+                android:id="@+id/togJoin6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

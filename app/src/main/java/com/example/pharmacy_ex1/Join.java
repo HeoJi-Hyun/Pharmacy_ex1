@@ -19,7 +19,7 @@ public class Join extends MainActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.join);
 
-        edittextId2 = (EditText) findViewById(R.id.edId2);
+        edittextId2 = (EditText) findViewById(R.id.edIdJoin2);
         edittextPw2 = (EditText) findViewById(R.id.edPw2);
 
         btnJoin2 = (Button) findViewById(R.id.btnStart);

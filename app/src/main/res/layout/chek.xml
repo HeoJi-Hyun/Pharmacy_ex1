@@ -23,14 +23,14 @@
             android:paddingBottom="4sp">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageChek1"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/search" />
 
             <EditText
-                android:id="@+id/edit1"
+                android:id="@+id/editchek1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

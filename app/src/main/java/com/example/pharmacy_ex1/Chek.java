@@ -32,7 +32,7 @@ public class Chek extends Activity {
 
 
         btnOk = (Button)findViewById(R.id.ChekOk);
-        editText1 = (EditText)findViewById(R.id.edit1);
+        editText1 = (EditText)findViewById(R.id.editchek1);
         togle1 = (ToggleButton)findViewById(R.id.tog1);
         togle2 = (ToggleButton)findViewById(R.id.tog2);
 

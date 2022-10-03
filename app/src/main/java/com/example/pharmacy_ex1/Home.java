@@ -1,26 +1,17 @@
 package com.example.pharmacy_ex1;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
 
 
 public class Home extends Activity  implements OnMapReadyCallback{
@@ -56,7 +47,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnprov.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent5 = new Intent(Home.this, Prov.class);
+                Intent intent5 = new Intent(Home.this, Medicine.class);
 
                 startActivity(intent5);
             }
