@@ -14,7 +14,7 @@
         android:paddingTop="10sp">
 
         <ImageView
-            android:id="@+id/imageChek1"
+            android:id="@+id/imageAuto1"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -31,7 +31,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/btnChek1"
+            android:id="@+id/btnAuto1"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_round"
@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical">
 
         <CheckedTextView
@@ -52,26 +53,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/hyper"
             android:text="타이레놀"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="30sp" />
 
         <CheckedTextView
             android:id="@+id/autoText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/hyper"
             android:text="탁센"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="30sp" />
 
         <CheckedTextView
             android:id="@+id/autoText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/hyper"
             android:text="광동경옥고"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 </LinearLayout>

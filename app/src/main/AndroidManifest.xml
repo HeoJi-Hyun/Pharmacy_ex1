@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<!--    <uses-permission android:name="android.permission.CAMERA"/>-->
-<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
-<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -32,6 +35,10 @@
         <activity android:name=".Chek" android:label="체크리스트"/>
         <activity android:name=".Prov2" android:label="까스활명수"/>
         <activity android:name=".Auto" android:label="자동완성이 가미된 검색창"/>
+        <activity android:name=".Pharm" android:label="약국정보"/>
+        <activity android:name=".Pharm1" android:label="약국정보"/>
+        <activity android:name=".Pharm2" android:label="약국정보"/>
+        <activity android:name=".Pharm3" android:label="약국정보"/>
 
         <receiver android:name=".Alarm_Reciver" />
 
