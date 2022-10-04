@@ -2,6 +2,178 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv1Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hyper2"
+        android:gravity="center_horizontal"
+        android:text="경희정문약국"
+        android:textColor="@color/pharmacy"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image1Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_5" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hyper2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image2Pharm2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도로명 : 서울 동대문구 경희대로 22-1"
+                android:textColor="#000000"
+                android:textColorHint="#989898"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv2Pharm2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+
+                android:text="지번 : 회기동 36-7"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv3Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hyper"
+        android:textColor="#000000"
+        android:textColorHint="#D6D6D6"
+        android:textSize="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image3Pharm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/tv4Pharm2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="02-957-6257"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv5Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hyper"
+        android:textColor="#000000"
+        android:textSize="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image4Pharm2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/tv6Pharm2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="네이버페이"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv7Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hyper"
+        android:textSize="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image5Pharm2"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_3" />
+
+        <TextView
+            android:id="@+id/tv8Pharm2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="이용시간 : 월~금 08:30 - 18:30"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                           토 09:00 - 13:00 / 일 휴무"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv9Pharm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hyper"
+        android:textColor="#000000"
+        android:textSize="5dp" />
 
 </LinearLayout>
