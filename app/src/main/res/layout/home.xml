@@ -16,8 +16,8 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
 
@@ -204,7 +204,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/button_round"
             android:text="약국"
-            android:textColor="#291717"
+            android:textColor="#392020"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
