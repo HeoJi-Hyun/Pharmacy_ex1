@@ -1,6 +1,5 @@
 package com.example.pharmacy_ex1;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +18,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-public class Auto extends Activity {
+public class Search extends Activity {
     private List<String> list;
     AutoCompleteTextView auto;
     Button btn1;
@@ -29,7 +28,7 @@ public class Auto extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.auto0);
+        setContentView(R.layout.search);
 
         auto = (AutoCompleteTextView) findViewById(R.id.autoSearch);
         btn1 = (Button)findViewById(R.id.btnAuto1);
@@ -60,17 +59,17 @@ public class Auto extends Activity {
             @Override
             public void onClick(View view) {
                 if (auto.getText().toString().equals("타이레놀")){
-                    Intent intent6 = new Intent(Auto.this, Prov1.class);
+                    Intent intent6 = new Intent(Search.this, Prov1.class);
 
                     startActivity(intent6);
                 }
                 else if (auto.getText().toString().equals("탁센")){
-                    Intent intent7 = new Intent(Auto.this, Prov2.class);
+                    Intent intent7 = new Intent(Search.this, Prov2.class);
 
                     startActivity(intent7);
                 }
                 else if (auto.getText().toString().equals("광동경옥고")){
-                    Intent intent8 = new Intent(Auto.this, Prov3.class);
+                    Intent intent8 = new Intent(Search.this, Prov3.class);
 
                     startActivity(intent8);
                 }
@@ -82,7 +81,7 @@ public class Auto extends Activity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent6 = new Intent(Auto.this, Prov1.class);
+                Intent intent6 = new Intent(Search.this, Prov1.class);
 
                 startActivity(intent6);
             }
@@ -90,7 +89,7 @@ public class Auto extends Activity {
         tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent7 = new Intent(Auto.this, Prov2.class);
+                Intent intent7 = new Intent(Search.this, Prov2.class);
 
                 startActivity(intent7);
             }
@@ -98,7 +97,7 @@ public class Auto extends Activity {
         tv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent8 = new Intent(Auto.this, Prov3.class);
+                Intent intent8 = new Intent(Search.this, Prov3.class);
 
                 startActivity(intent8);
             }

@@ -21,7 +21,8 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
 
-            android:background="@drawable/menu" />
+            android:background="@drawable/menu"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <LinearLayout
             android:layout_width="249dp"
@@ -44,20 +45,20 @@
 
         <Button
             android:id="@+id/homeProv"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/search"
             android:minHeight="48dp"
             android:textColor="#291717"
             android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck" />
+            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="512dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <FrameLayout
@@ -76,7 +77,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="288dp"
+            android:layout_height="180dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -166,18 +167,10 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:orientation="horizontal"></LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="74dp"-->
+<!--        android:orientation="horizontal"></LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -188,7 +181,6 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnMy"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
@@ -209,7 +201,7 @@
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/homeCamera"
             android:layout_width="76dp"
             android:layout_height="76dp"
             android:layout_gravity="center"
@@ -229,7 +221,7 @@
             android:minHeight="48dp"
             android:textColor="#291717"
             android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/homeChek"
@@ -240,7 +232,7 @@
             android:background="@drawable/review"
             android:textColor="#291717"
             android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     </LinearLayout>
 </LinearLayout>

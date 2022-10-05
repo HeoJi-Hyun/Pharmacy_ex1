@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:background="@color/white"
-    android:gravity="top">
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TimePicker
             android:id="@+id/time_picker"
@@ -27,33 +27,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/btn_start"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/button_join"
-            android:gravity="center"
             android:text="@string/dpd"
             android:textColor="@color/pharmacy"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="25dp"/>
 
         <Button
             android:id="@+id/btn_finish"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="10sp"
             android:background="@drawable/button_login"
-            android:gravity="center"
             android:text="@string/dndpd"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="25dp"/>
 
     </LinearLayout>
 

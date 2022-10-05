@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,6 +18,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Home extends Activity  implements OnMapReadyCallback{
 
  Button btnala, btnprov, btnchek, btnpharm;
+ ImageButton btncamera;
 
 
     @Override
@@ -28,6 +30,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnprov = (Button)findViewById(R.id.homeProv);
         btnchek = (Button)findViewById(R.id.homeChek);
         btnpharm = (Button)findViewById(R.id.homePharm);
+        btncamera = (ImageButton) findViewById(R.id.homeCamera);
 
         btnala.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +51,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnprov.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent5 = new Intent(Home.this, Auto.class);
+                Intent intent5 = new Intent(Home.this, Search.class);
 
                 startActivity(intent5);
             }
@@ -59,6 +62,15 @@ public class Home extends Activity  implements OnMapReadyCallback{
                 Intent intent6 = new Intent(Home.this, Pharm.class);
 
                 startActivity(intent6);
+            }
+        });
+
+        btncamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent7 = new Intent(Home.this, Camera.class);
+
+                startActivity(intent7);
             }
         });
 

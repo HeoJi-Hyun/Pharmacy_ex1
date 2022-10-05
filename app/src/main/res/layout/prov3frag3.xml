@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="1) 다른 약물을 투여 받고 있는 환자  2) 고령자(일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의할 것.)  3) 현저하게 위장이 허약한 환자(식욕부진, 위부불쾌감, 구역, 구토, 설사 등이 나타날 수 있다.)  4) 식욕부진, 구역, 구토의 증상이 있는 환자(증상이 악화될 수 있다.)  5) 1세 이하의 영아"
+                android:text="1) 다른 약물을 투여 받고 있는 환자"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -66,7 +66,37 @@
                 android:id="@+id/tvFrag3.36"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3. 다음과 같은 경우 이 약의 복용을 즉각 중지하고 의사, 한의사, 치과의사, 약사, 한약사와 상의할 것. 상담시 가능한한 이 첨부문서를 소지할 것." />
+                android:layout_marginTop="5dp"
+                android:text="2) 고령자(일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의할 것.)"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFrag3.37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="3) 현저하게 위장이 허약한 환자(식욕부진, 위부불쾌감, 구역, 구토, 설사 등이 나타날 수 있다.)"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvFrag3.38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="4) 식욕부진, 구역, 구토의 증상이 있는 환자(증상이 악화될 수 있다.)"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvFrag3.39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="5) 1세 이하의 영아"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
         </LinearLayout>
 

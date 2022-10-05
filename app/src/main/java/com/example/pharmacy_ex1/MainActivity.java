@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText edittextId1, edittextPw1;
-    Button btnJoin1, btnLogin1, btn8, btn9, btn10;
+    Button btnJoin1, btnLogin1,btn9;
     Integer v1, v2;
 
     @Override
@@ -23,11 +23,8 @@ public class MainActivity extends AppCompatActivity {
         edittextId1 = (EditText) findViewById(R.id.edId1);
         edittextPw1 = (EditText) findViewById(R.id.edPw1);
         btnLogin1 = (Button) findViewById(R.id.btnLogin);
-        btn8 = (Button) findViewById(R.id.btnAla);
         btn9 = (Button) findViewById(R.id.btnMain);
         btnJoin1 = (Button) findViewById(R.id.btnJoin);
-        btn10 = (Button) findViewById(R.id.btnAuto);
-
 
         btnJoin1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,26 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        btn8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent8 = new Intent(MainActivity.this, Alarm.class);
-                startActivity(intent8);
-            }
-        });
+
+
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent9 = new Intent(MainActivity.this, Home.class);
                 startActivity(intent9);
-            }
-        });
-        btn10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent10 = new Intent(MainActivity.this, Auto.class);
-                startActivity(intent10);
-
             }
         });
     }

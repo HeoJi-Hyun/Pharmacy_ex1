@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="219dp"
-            android:layout_height="150dp"
+            android:layout_width="264dp"
+            android:layout_height="225dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/logo_2"
-            android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/logo_2" />
     </LinearLayout>
 
     <EditText
@@ -29,13 +30,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8sp"
+        android:autofillHints=""
         android:backgroundTint="#FE730E"
         android:ems="10"
         android:hint="@string/id"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="#DD2C00"
-        android:autofillHints="" />
+        android:textColorHint="#5D5D5D" />
 
     <EditText
         android:id="@+id/edPw1"
@@ -47,7 +48,8 @@
         android:ems="10"
         android:hint="비밀번호를 입력하세요."
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#5D5D5D" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -65,16 +67,11 @@
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_join"
         android:text="@string/join1"
         android:textColor="@color/pharmacy"
         android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/btnAla"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="봉수진꺼(알람)" />
 
     <Button
         android:id="@+id/btnMain"
@@ -82,9 +79,4 @@
         android:layout_height="wrap_content"
         android:text="메인화면 바로가" />
 
-    <Button
-        android:id="@+id/btnAuto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="자동완성 바로가" />
 </LinearLayout>
