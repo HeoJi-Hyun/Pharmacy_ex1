@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText edittextId1, edittextPw1;
-    Button btnJoin1, btnLogin1,btn9;
+    Button btnJoin1, btnLogin1;
     Integer v1, v2;
 
     @Override
@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         edittextId1 = (EditText) findViewById(R.id.edId1);
         edittextPw1 = (EditText) findViewById(R.id.edPw1);
         btnLogin1 = (Button) findViewById(R.id.btnLogin);
-        btn9 = (Button) findViewById(R.id.btnMain);
         btnJoin1 = (Button) findViewById(R.id.btnJoin);
 
         btnJoin1.setOnClickListener(new View.OnClickListener() {
@@ -50,15 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "아이디 혹은 비밀번호를 확인하세요", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
-
-
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent9 = new Intent(MainActivity.this, Home.class);
-                startActivity(intent9);
             }
         });
     }

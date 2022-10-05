@@ -80,9 +80,9 @@ public class Home extends Activity  implements OnMapReadyCallback{
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng location = new LatLng(37.485284,126.901451);
+        LatLng location = new LatLng(37.557667,126.926546);
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.title("구로디지털단지역");
+        markerOptions.title("홍대입구역");
         markerOptions.snippet("전철역");
         markerOptions.position(location);
         googleMap.addMarker(markerOptions);
