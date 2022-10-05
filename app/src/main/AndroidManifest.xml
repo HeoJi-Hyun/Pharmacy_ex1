@@ -33,6 +33,7 @@
         <activity android:name=".Alarm" android:label="알람기능"/>
         <activity android:name=".Prov1" android:label="타이레놀"/>
         <activity android:name=".Chek" android:label="체크리스트"/>
+        <activity android:name=".Prov3" android:label="타이레놀"/>
         <activity android:name=".Prov2" android:label="까스활명수"/>
         <activity android:name=".Auto" android:label="약정보"/>
         <activity android:name=".Pharm" android:label="약국정보"/>

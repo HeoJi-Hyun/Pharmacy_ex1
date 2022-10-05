@@ -21,12 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageProv3"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="205dp"-->
-<!--            android:src="@drawable/okgo" />-->
+        <ImageView
+            android:id="@+id/imageProv3"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:src="@drawable/img_10" />
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
