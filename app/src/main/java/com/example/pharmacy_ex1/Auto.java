@@ -25,14 +25,14 @@ public class Auto extends Activity {
     Button btn1;
     CheckedTextView tv1, tv2, tv3;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auto0);
 
         auto = (AutoCompleteTextView) findViewById(R.id.autoSearch);
-        btn1 = (Button)findViewById(R.id.btnChek1);
+        btn1 = (Button)findViewById(R.id.btnAuto1);
         tv1 = (CheckedTextView)findViewById(R.id.autoText1);
         tv2 = (CheckedTextView)findViewById(R.id.autoText2);
         tv3 = (CheckedTextView)findViewById(R.id.autoText3);
