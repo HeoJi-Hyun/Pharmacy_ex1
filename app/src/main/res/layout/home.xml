@@ -11,7 +11,53 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
+        android:background="@color/pharmacy">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/menu" />
+
+        <LinearLayout
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="약국번가"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/homeProv"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/search"
+            android:minHeight="48dp"
+            android:textColor="#291717"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
         android:orientation="vertical">
 
         <FrameLayout
@@ -29,8 +75,8 @@
         </FrameLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -84,7 +130,7 @@
             </LinearLayout>
 
             <FrameLayout
-                android:layout_width="fill_parent"
+                android:layout_width="208dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="5dp">
@@ -92,14 +138,15 @@
 
                 <ImageView
                     android:id="@+id/imagehome1"
-                    android:layout_width="190dp"
-                    android:layout_height="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="169dp"
+                    android:layout_margin="10dp"
                     android:src="@drawable/memo" />
 
 
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_height="108dp"
                     android:orientation="vertical">
 
                     <EditText
@@ -125,57 +172,75 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/homeAla"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/buttonitem"
-            android:text="알람"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck" />
-
-        <Button
-            android:id="@+id/homeChek"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/buttonitem"
-            android:text="체크리스트"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="74dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/pharmacy"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/homePharm"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
+            android:id="@+id/btnMy"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/buttonitem"
+            android:background="@drawable/inform"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/homePharm"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round"
             android:text="약국"
+            android:textColor="#291717"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-        <Button
-            android:id="@+id/homeProv"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/buttonitem"
-            android:text="약정보"
+            android:background="@drawable/button_camera"
+            android:padding="0dp"
+            android:src="@drawable/camera"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/homeAla"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/ala"
+            android:minHeight="48dp"
+            android:textColor="#291717"
             android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck" />
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/homeChek"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/review"
+            android:textColor="#291717"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
     </LinearLayout>
 </LinearLayout>

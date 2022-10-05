@@ -19,7 +19,8 @@
             android:layout_width="219dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/logo_2" />
+            app:srcCompat="@drawable/logo_2"
+            android:contentDescription="TODO" />
     </LinearLayout>
 
     <EditText
@@ -30,9 +31,11 @@
         android:layout_margin="8sp"
         android:backgroundTint="#FE730E"
         android:ems="10"
-        android:hint="아이디를 입력하세요."
+        android:hint="@string/id"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#DD2C00"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edPw1"
@@ -51,19 +54,21 @@
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:background="@drawable/button_login"
         android:backgroundTint="#FE730E"
-        android:text="로그인" />
+        android:text="로그인"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnJoin"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#FFFFFF"
-        android:text="회원가입"
-        android:textColor="#FE730E"
-        app:strokeColor="#FE730E"
-        app:strokeWidth="2sp" />
+        android:background="@drawable/button_join"
+        android:text="@string/join1"
+        android:textColor="@color/pharmacy"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnAla"

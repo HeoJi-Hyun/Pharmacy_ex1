@@ -2,5 +2,10 @@
     <string name="app_name">Pharmacy_ex1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dpd">시작</string>
+    <string name="dndpd">종료</string>
+    <string name="join">회원가입</string>
+    <string name="join1">회원가입</string>
+    <string name="id">아이디를 입력하세요.</string>
 </resources>
 

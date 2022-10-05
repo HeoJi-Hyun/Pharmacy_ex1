@@ -53,6 +53,8 @@ public class Auto extends Activity {
         list.add("타이레놀");
         list.add("탁센");
         list.add("광동경옥고");
+        list.add("탁재훈");
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
