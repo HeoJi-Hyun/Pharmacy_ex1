@@ -29,7 +29,7 @@
 
         </activity>
         <activity android:name=".Join" android:label="회원가입"/>
-        <activity android:name=".Home" android:label="지도"/>
+        <activity android:name=".Home" android:label="홈"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
         <activity android:name=".Prov1" android:label="타이레놀"/>
         <activity android:name=".Chek" android:label="체크리스트"/>
@@ -41,6 +41,9 @@
         <activity android:name=".Pharm2" android:label="약국정보"/>
         <activity android:name=".Pharm3" android:label="약국정보"/>
         <activity android:name=".Camera" android:label="스캔"/>
+        <activity android:name=".Mypage" android:label="마이페이지"/>
+        <activity android:name=".My_Chek" android:label="내 체크리스트"/>
+
 
         <receiver android:name=".Alarm_Reciver" />
 

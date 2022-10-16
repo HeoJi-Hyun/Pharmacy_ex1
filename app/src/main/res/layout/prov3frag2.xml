@@ -7,13 +7,14 @@
     android:orientation="vertical"
     android:layout_margin="15dp"
     tools:context=".Prov1Frag2">
+
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -38,7 +39,7 @@
             <TextView
                 android:id="@+id/tvFrag3.23"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:text="1회 23.5 g을 1일 2회 아침, 저녁 식전 또는 식간에(식사때와 식사때 사이에) 복용한다"
                 android:textColor="@color/black"

@@ -1,62 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    >
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="250dp"-->
+    <!--            android:background="#ffffff"-->
+    <!--            android:id="@+id/ImageContainer">-->
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#ffffff"
-        android:id="@+id/ImageContainer">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView"
-            android:src="@drawable/img_8"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/OCRButtonContainer"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/ImageContainer"
-        android:background="@color/pharmacy"
-        android:clickable="true"
-        android:onClick="processImage">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:clickable="true"
-            android:onClick="processImage"
-            android:text="스캔하기"
-            android:textColor="#ffffff"
-            android:textSize="28dp"
-            android:textStyle="bold"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/OCRButtonContainer"
-        android:padding="10dp">
+        android:src="@drawable/img_8" />
 
-        <TextView
-            android:id="@+id/OCRTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="#FFFFFF"
-            android:textColor="#000000"
-            android:textSize="24sp" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/btnMy2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/pharmacy"
+        android:text="스캔하기"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과출력"
+        android:textColor="#0D0D0D"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0D0D0D"
+        android:textSize="20sp" />
 
 
-</RelativeLayout>
+    <!--        </RelativeLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/OCRTextView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:textSize="24sp" />-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/OCRButtonContainer"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_below="@id/ImageContainer"-->
+    <!--            android:background="@color/pharmacy"-->
+    <!--            android:clickable="true"-->
+    <!--            android:onClick="processImage">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:clickable="true"-->
+    <!--                android:onClick="processImage"-->
+    <!--                android:text="스캔하기"-->
+    <!--                android:textColor="#ffffff"-->
+    <!--                android:textSize="28dp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/OCRButtonContainer"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/OCRTextView"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:background="#FFFFFF"-->
+    <!--                android:textColor="#000000"-->
+    <!--                android:textSize="24sp" />-->
+    <!--        </RelativeLayout>-->
+
+
+</LinearLayout>

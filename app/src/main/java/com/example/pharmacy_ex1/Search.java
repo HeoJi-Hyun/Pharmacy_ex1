@@ -52,7 +52,14 @@ public class Search extends Activity {
         list.add("타이레놀");
         list.add("탁센");
         list.add("광동경옥고");
-        list.add("탁재훈");
+        list.add("까스활명수");
+        list.add("판콜에스");
+        list.add("판피린큐액");
+        list.add("벤포벨S에스정");
+        list.add("비맥스메타비 ");
+        list.add("케토톱플라스타");
+        list.add("아로나민골드프리미엄");
+
 
 
         btn1.setOnClickListener(new View.OnClickListener() {

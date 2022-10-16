@@ -2,6 +2,7 @@ package com.example.pharmacy_ex1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         edittextPw1 = (EditText) findViewById(R.id.edPw1);
         btnLogin1 = (Button) findViewById(R.id.btnLogin);
         btnJoin1 = (Button) findViewById(R.id.btnJoin);
-
+//        btnMain = (Button)findViewById(R.id.btnMain);
         btnJoin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Join.class);
+                Intent intent = new Intent(MainActivity.this, Home.class);
                 startActivity(intent);
             }
         });
@@ -43,13 +44,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (edittextId1.getText().toString().equals(v1.toString()) && edittextPw1.getText().toString().equals(v2.toString())) {
 
-                    Intent intent1 = new Intent(MainActivity.this, Home.class);
+                    Intent intent = new Intent(MainActivity.this, Home.class);
 
-                    startActivity(intent1);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "아이디 혹은 비밀번호를 확인하세요", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+//        btnMain.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent2 = new Intent(MainActivity.this, Home.class);
+//
+//                startActivity(intent2);
+//            }
+//        });
+
     }
 }

@@ -17,7 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Home extends Activity  implements OnMapReadyCallback{
 
- Button btnala, btnprov, btnchek, btnpharm;
+ Button btnala, btnprov, btnchek, btnpharm, btnMy;
  ImageButton btncamera;
 
 
@@ -31,6 +31,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnchek = (Button)findViewById(R.id.homeChek);
         btnpharm = (Button)findViewById(R.id.homePharm);
         btncamera = (ImageButton) findViewById(R.id.homeCamera);
+        btnMy = (Button) findViewById(R.id.homeMy);
 
         btnala.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +75,14 @@ public class Home extends Activity  implements OnMapReadyCallback{
             }
         });
 
+        btnMy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent8 = new Intent(Home.this, Mypage.class);
+
+                startActivity(intent8);
+            }
+        });
 
     }
 

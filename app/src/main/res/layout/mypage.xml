@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,12 +13,13 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/btnMy1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/gigi" />
+            app:srcCompat="@drawable/gigi"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -26,20 +29,26 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="65dp"
             app:srcCompat="@drawable/saram" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:text="똥끄멍님"
+            android:text="님"
             android:textColor="#000000"
             android:textSize="25sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -48,43 +57,45 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnMy2"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="90dp"
             android:layout_margin="15dp"
             android:backgroundTint="#E4E4E4"
             android:drawableLeft="@drawable/cpmcpzm"
             android:text="질병 체크리스트"
             android:textColor="#555555"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMy3"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="90dp"
             android:layout_margin="15dp"
             android:backgroundTint="#E4E4E4"
             android:drawableLeft="@drawable/dirdir"
             android:text="복용중인 약"
             android:textColor="#555555"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnMy4"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="90dp"
             android:layout_margin="15dp"
             android:backgroundTint="#E4E4E4"
             android:drawableLeft="@drawable/rererere"
             android:text="리뷰관리"
             android:textColor="#555555"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="198dp"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -104,7 +115,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/homePharm"
+            android:id="@+id/MyPharm"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
@@ -115,7 +126,7 @@
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/homeCamera"
+            android:id="@+id/MyCamera"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_gravity="center"
@@ -126,7 +137,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/homeAla"
+            android:id="@+id/MyAla"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -138,7 +149,7 @@
             tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/homeChek"
+            android:id="@+id/MyChek"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"

@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="276dp"
-            android:layout_height="302dp"
+            android:layout_height="280dp"
             android:layout_gravity="center"
             android:contentDescription="TODO"
             app:srcCompat="@drawable/logo_2" />
@@ -37,7 +37,8 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#2C2C2C"
-        android:textColorHint="#5D5D5D" />
+        android:textColorHint="#5D5D5D"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edPw1"
@@ -51,28 +52,29 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="#2C2C2C"
-        android:textColorHint="#5D5D5D" />
+        android:textColorHint="#5D5D5D"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="5sp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_login"
         android:backgroundTint="#FE730E"
         android:text="로그인"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnJoin"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button_join"
         android:text="@string/join1"
         android:textColor="@color/pharmacy"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
 </LinearLayout>

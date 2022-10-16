@@ -24,19 +24,22 @@ public class Join extends MainActivity{
 
         edittextId2 = (EditText) findViewById(R.id.edIdJoin2);
         edittextPw2 = (EditText) findViewById(R.id.edPw2);
-
         btnJoin2 = (Button) findViewById(R.id.btnStart);
 
         btnJoin2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent1 = new Intent(Join.this, MainActivity.class);
                 startActivity(intent1);
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("id", Integer.parseInt(edittextId2.getText().toString()));
+                intent.putExtra("pass",Integer.parseInt(edittextPw2.getText().toString()));
+
+                startActivity(intent);
+
             }
         });
-
-
-
-
     }
 }

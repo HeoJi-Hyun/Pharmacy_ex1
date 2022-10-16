@@ -53,6 +53,10 @@ public class Pharm extends Activity  implements OnMapReadyCallback {
         list.add("코아약국");
         list.add("경희정문약국");
         list.add("고황약국");
+        list.add("성심약국");
+        list.add("경희메디칼약국");
+        list.add("크로바약국");
+        list.add("경희온누리약국");
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

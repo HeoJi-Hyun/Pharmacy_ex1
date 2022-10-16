@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical">
 
@@ -31,7 +31,7 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@android:color/background_light"
         android:elevation="1dp"
         app:tabGravity="fill"
@@ -43,7 +43,7 @@
     <FrameLayout
         android:id="@+id/container3"
         android:layout_width="match_parent"
-        android:layout_height="412dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/tabs3">
 
     </FrameLayout>

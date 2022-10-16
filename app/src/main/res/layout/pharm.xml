@@ -106,6 +106,66 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+        <CheckedTextView
+            android:id="@+id/tvPharm7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="경희온누리약국"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hyper"
+            android:textSize="5dp" />
+        <CheckedTextView
+            android:id="@+id/tvPharm6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="경희메디칼약국"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hyper"
+            android:textSize="5dp" />
+        <CheckedTextView
+            android:id="@+id/tvPharm4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="성심약국"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hyper"
+            android:textSize="5dp" />
+        <CheckedTextView
+            android:id="@+id/tvPharm5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="크로바약국"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hyper"
+            android:textSize="5dp" />
 
     </LinearLayout>
 

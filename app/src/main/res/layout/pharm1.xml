@@ -155,7 +155,7 @@
             android:id="@+id/tv9Pharm1"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text="이용시간 : "
+            android:text="이용시간 : 매장전화로 문의주세요."
             android:textColor="#000000"
             android:textSize="20sp" />
     </LinearLayout>
