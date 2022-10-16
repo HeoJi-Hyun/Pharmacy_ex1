@@ -10,15 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnMy1"
-            android:layout_width="match_parent"
+            android:layout_width="50dp"
             android:layout_height="45dp"
-            android:background="@color/white"
+            android:background="@drawable/gigi"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/gigi"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
