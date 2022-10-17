@@ -77,7 +77,7 @@ public class Alarm extends Activity {
         alarm_off.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Alarm.this,"임진왜란아, 깨웠는데 왜 안일어나니",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Alarm.this,"약 복용 시간입니다.",Toast.LENGTH_SHORT).show();
                 // 알람매니저 취소
                 alarm_manager.cancel(pendingIntent);
 
