@@ -17,6 +17,7 @@ public class My_Chek extends Activity {
     TextView tv1, tv2,tv3, tv4,tv5, tv6,tv7, tv8,tv9, tv10,tv11, tv12;
     String v1, v2, v3,v4, v5, v6,v7, v8, v9,v10, v11, v12;
     LinearLayout l1, l2, l3, l4, l5, l6, l7, l8,l9, l10, l11, l12;
+    Button mychek_ok;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,6 +25,7 @@ public class My_Chek extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_chek);
 
+        mychek_ok = (Button)findViewById(R.id.mychek_ok);
         tv1 = (TextView) findViewById(R.id.myChek1);
         tv2 = (TextView) findViewById(R.id.myChek2);
         tv3 = (TextView) findViewById(R.id.myChek3);
@@ -127,6 +129,14 @@ public class My_Chek extends Activity {
         if (tv12.getText().toString().equals("담석증")){
             l12.setVisibility(View.VISIBLE);
         }else{l12.setVisibility(View.GONE);}
+
+        mychek_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(My_Chek.this, Chek.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

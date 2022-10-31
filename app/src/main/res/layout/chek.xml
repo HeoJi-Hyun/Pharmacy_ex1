@@ -231,5 +231,10 @@
         android:id="@+id/btnChek2"
         android:layout_width="130dp"
         android:layout_height="60dp"
-        android:text="Button" />
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_login"
+        android:gravity="center|center_horizontal"
+        android:text="저장"
+        android:textSize="24sp" />
 </LinearLayout>
