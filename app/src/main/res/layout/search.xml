@@ -14,14 +14,14 @@
         android:paddingTop="10sp">
 
         <ImageView
-            android:id="@+id/imageAuto1"
+            android:id="@+id/imageRe1"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:src="@drawable/search" />
 
         <AutoCompleteTextView
-            android:id="@+id/autoSearch"
+            android:id="@+id/reSearch"
             android:layout_width="309dp"
             android:layout_height="48dp"
             android:completionHint="검색어를 입력하세요."
@@ -31,7 +31,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/btnAuto1"
+            android:id="@+id/btnRe1"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_round"
