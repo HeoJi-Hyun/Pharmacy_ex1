@@ -1,5 +1,6 @@
 package com.example.pharmacy_ex1;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,15 +28,16 @@ public class Pharm extends Activity  implements OnMapReadyCallback {
     AutoCompleteTextView auto;
     Button btn1;
     CheckedTextView tv1, tv2, tv3;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pharm);
         auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
         btn1 = (Button)findViewById(R.id.btnPharm1);
-        tv1 = (CheckedTextView)findViewById(R.id.tvPharm1);
-        tv2 = (CheckedTextView)findViewById(R.id.tvPharm2);
-        tv3 = (CheckedTextView)findViewById(R.id.tvPharm3);
+        tv1 = (CheckedTextView)findViewById(R.id.Pharm1);
+        tv2 = (CheckedTextView)findViewById(R.id.Pharm2);
+        tv3 = (CheckedTextView)findViewById(R.id.Pharm3);
 
         list = new ArrayList<String>();
 
