@@ -46,6 +46,8 @@
         <activity android:name=".Mypage" android:label="마이페이지"/>
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
 
+        <receiver android:name=".AlertReceiver"/>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
