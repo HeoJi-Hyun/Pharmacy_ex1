@@ -43,7 +43,7 @@ public class Alarm extends Activity {
 
         // 알람리시버 intent 생성
         final Intent my_intent = new Intent(this.context, Alarm_Reciver.class);
-
+//오잉
         // 알람 시작 버튼
         Button alarm_on = findViewById(R.id.btn_start);
         alarm_on.setOnClickListener(new View.OnClickListener() {
