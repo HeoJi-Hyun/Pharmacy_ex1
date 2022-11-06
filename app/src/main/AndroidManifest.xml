@@ -47,12 +47,6 @@
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
 
 
-        <receiver android:name=".Alarm_Reciver" />
-
-        <service
-            android:name=".RingtonePlayingService"
-            android:enabled="true"/>
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC-F45JLzJoSY5rxgIfBDOB72PYtCNHIUg"/>

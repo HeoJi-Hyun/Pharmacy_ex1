@@ -1,91 +1,102 @@
 package com.example.pharmacy_ex1;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-
+import java.text.DateFormat;
 import java.util.Calendar;
 
-public class Alarm extends Activity {
-
-    AlarmManager alarm_manager;
-    TimePicker alarm_timepicker;
-    Context context;
-    PendingIntent pendingIntent;
-
+public class Alarm extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+    public  static  final String TAG = "MAIN";
+    private TextView time_text;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm);
 
-        this.context = this;
 
-        // 알람매니저 설정
-        alarm_manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        time_text =  findViewById(R.id.time_text);
 
-        // 타임피커 설정
-        alarm_timepicker = findViewById(R.id.time_picker);
-
-        // Calendar 객체 생성
-        final Calendar calendar = Calendar.getInstance();
-
-        // 알람리시버 intent 생성
-        final Intent my_intent = new Intent(this.context, Alarm_Reciver.class);
-//오잉
-        // 알람 시작 버튼
-        Button alarm_on = findViewById(R.id.btn_start);
-        alarm_on.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
+        Button button = (Button) findViewById(R.id.time_btn);
+        button.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-
-                // calendar에 시간 셋팅
-                calendar.set(Calendar.HOUR_OF_DAY, alarm_timepicker.getHour());
-                calendar.set(Calendar.MINUTE, alarm_timepicker.getMinute());
-
-                // 시간 가져옴
-                int hour = alarm_timepicker.getHour();
-                int minute = alarm_timepicker.getMinute();
-                Toast.makeText(Alarm.this,"Alarm 예정 " + hour + "시 " + minute + "분",Toast.LENGTH_SHORT).show();
-
-                // reveiver에 string 값 넘겨주기
-                my_intent.putExtra("state","alarm on");
-
-                pendingIntent = PendingIntent.getBroadcast(Alarm.this, 0, my_intent,
-                        PendingIntent.FLAG_UPDATE_CURRENT);
-
-                // 알람셋팅
-                alarm_manager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                        pendingIntent);
+            public void onClick(View v){
+                DialogFragment timePicker = new TimePickerFragment();
+                timePicker.show(getSupportFragmentManager(), "time picker");
             }
+
         });
 
-        // 알람 정지 버튼
-        Button alarm_off = findViewById(R.id.btn_finish);
-        alarm_off.setOnClickListener(new View.OnClickListener() {
+        Button alarm_calcel_btn = findViewById(R.id.alarm_cancel_btn);
+        alarm_calcel_btn.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                Toast.makeText(Alarm.this,"약 복용 시간입니다.",Toast.LENGTH_SHORT).show();
-                // 알람매니저 취소
-                alarm_manager.cancel(pendingIntent);
+            public void onClick (View v) {
 
-                my_intent.putExtra("state","alarm off");
-
-                // 알람취소
-                sendBroadcast(my_intent);
+                cancelAlarm();
             }
         });
     }
+
+    //    시간을 정하면 호출되는 메소드입니따
+    @Override
+    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+        Log.d(TAG, "## onTimeSet ##");
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.HOUR_OF_DAY, hourOfDay);
+        c.set(Calendar.MINUTE, minute);
+        c.set(Calendar.SECOND, 0);
+
+//        화면에 시간지정
+        updateTimeText(c);
+//        알람설정
+        startAlarm(c);
+    }
+    //    화면에 사용자가 선택한 시간을 보여줌
+    private void updateTimeText(Calendar c){
+        Log.d(TAG, "## updateTimeSet ##");
+        String timeText = "복용알람 : ";
+        timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
+
+        time_text.setText(timeText);
+    }
+    //    알람시작
+    private void startAlarm(Calendar c){
+        Log.d(TAG, "## startAlarm ##");
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, AlertReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+
+        if(c.before((Calendar.getInstance()))){
+            c.add(Calendar.DATE, 1);
+        }
+//        지정된 시간에 기기의 절전 모드를 해제하여 대기중인 인텐트 실행
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+        //alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), 1*60*1000 ,  pendingIntent);
+
+    }
+
+    private void cancelAlarm(){
+        Log.d(TAG, "## cancelAlarm ##");
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, AlertReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+
+        alarmManager.cancel(pendingIntent);
+        time_text.setText("알람취소");
+    }
+
 }
