@@ -1,38 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Alarm">
 
     <TextView
         android:id="@+id/time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/time_btn"
-        android:layout_centerHorizontal="true"
 
 
-        android:layout_marginBottom="31dp"
-        android:text="@string/ajsh"
+        android:layout_gravity="center"
+        android:layout_marginTop="241dp"
+        android:layout_marginBottom="140dp"
+        android:text="설정된 알람이 없습니다"
+        android:textAlignment="center"
+        android:textColor="#393939"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/time_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="119dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/dmdpd" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/button_camera"
+        android:text="알람 설정하기"
+        android:textAlignment="center"
+        android:textColor="@color/pharmacy"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/alarm_cancel_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="118dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/time_btn"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:layout_marginTop="27dp"
-        android:text="@string/cnlth" />
+        android:background="@drawable/button_login"
+        android:text="@string/cnlth"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
-</RelativeLayout>
+</LinearLayout>
