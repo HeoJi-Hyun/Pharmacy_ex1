@@ -15,7 +15,7 @@
 
 
         android:layout_marginBottom="31dp"
-        android:text="설정된 알람이 업떠요"
+        android:text="@string/ajsh"
         android:textSize="30sp" />
 
     <Button
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="시간 설정하긩" />
+        android:text="@string/dmdpd" />
 
     <Button
         android:id="@+id/alarm_cancel_btn"
@@ -32,7 +32,7 @@
         android:layout_below="@+id/time_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
-        android:text="알람 취소하기" />
+        android:text="@string/cnlth" />
 
 
 </RelativeLayout>
