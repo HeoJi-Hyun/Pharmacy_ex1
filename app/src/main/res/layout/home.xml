@@ -55,119 +55,124 @@
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </LinearLayout>
-
-    <LinearLayout
+<!--    상단끝-->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="20dp"
-            android:layout_weight="0">
-
-
-            <fragment
-                android:id="@+id/googleMap"
-                class="com.google.android.gms.maps.MapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </FrameLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="30dp"
-                android:layout_weight="0"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvhome1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="• 약 이름 1"
-                    android:textColor="#FD730E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvhome2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="• 약 이름 2"
-                    android:textColor="#FD730E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvhome3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="• 약 이름 3"
-                    android:textColor="#FD730E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvhome4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="0"
-                    android:text="• 약 이름 4"
-                    android:textColor="#FD730E"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <FrameLayout
-                android:layout_width="208dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="5dp">
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:layout_weight="0">
 
 
-                <ImageView
-                    android:id="@+id/imagehome1"
+                <fragment
+                    android:id="@+id/googleMap"
+                    class="com.google.android.gms.maps.MapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="169dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/memo" />
+                    android:layout_height="match_parent" />
+            </FrameLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="108dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="0"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/edithome1"
+                    <TextView
+                        android:id="@+id/tvhome1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="40dp"
-                        android:hint="메모를 입력하세요"
-                        android:inputType="textPersonName"
-                        android:textColor="#353535"
-                        android:textColorHint="#505050"
+                        android:text="• 약 이름 1"
+                        android:textColor="#FD730E"
                         android:textSize="20sp"
-                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvhome2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="• 약 이름 2"
+                        android:textColor="#FD730E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvhome3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="• 약 이름 3"
+                        android:textColor="#FD730E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvhome4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0"
+                        android:text="• 약 이름 4"
+                        android:textColor="#FD730E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-            </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="208dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="5dp">
+
+
+                    <ImageView
+                        android:id="@+id/imagehome1"
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/memo" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="108dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edithome1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="40dp"
+                            android:hint="메모를 입력하세요"
+                            android:inputType="textPersonName"
+                            android:textColor="#353535"
+                            android:textColorHint="#505050"
+                            android:textSize="20sp"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
         </LinearLayout>
-
-    </LinearLayout>
-
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1dp" />
@@ -196,7 +201,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/pharm"
-            android:textColor="#392020"
+            android:textColor="#D3D3D3"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
 

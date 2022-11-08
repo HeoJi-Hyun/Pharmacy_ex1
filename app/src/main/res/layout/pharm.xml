@@ -1,172 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_main"
-    android:orientation="vertical"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/pharmacy"
-    android:orientation="horizontal"
-    android:paddingTop="10sp">
-
-    <ImageView
-        android:id="@+id/imagePharm1"
-        android:layout_width="30dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/search" />
-
-    <AutoCompleteTextView
-        android:id="@+id/autoPharm"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:completionHint="검색어를 입력하세요."
-        android:completionThreshold="1"
-        android:gravity="center_vertical"
-        android:textColorHint="#555555"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-        android:id="@+id/btnPharm1"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_round"
-        android:text="검색"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="20dp"
-        android:layout_weight="0">
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
-        <fragment
-            android:id="@+id/googleMap"
-            class="com.google.android.gms.maps.MapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <!--    <LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:background="@color/pharmacy"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:paddingTop="10sp">-->
 
-        <CheckedTextView
-            android:id="@+id/Pharm1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="코아약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imagePharm1"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:src="@drawable/search" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
+<!--    <AutoCompleteTextView-->
+<!--        android:id="@+id/autoPharm"-->
+<!--        android:layout_width="309dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:completionHint="검색어를 입력하세요."-->
+<!--        android:completionThreshold="1"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColorHint="#555555"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
 
-        <CheckedTextView
-            android:id="@+id/Pharm2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="경희정문약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+<!--        <Button-->
+<!--        android:id="@+id/btnPharm1"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/button_round"-->
+<!--        android:text="검색"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp" />-->
+<!--    </LinearLayout>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_weight="0">-->
 
-        <CheckedTextView
-            android:id="@+id/Pharm3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="고황약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
-        <CheckedTextView
-            android:id="@+id/Pharm7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="경희온누리약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+<!--        <fragment-->
+<!--            android:id="@+id/googleMap"-->
+<!--            class="com.google.android.gms.maps.MapFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+<!--    </FrameLayout>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
-        <CheckedTextView
-            android:id="@+id/Pharm6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="경희메디칼약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
-        <CheckedTextView
-            android:id="@+id/Pharm4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="성심약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
-        <CheckedTextView
-            android:id="@+id/Pharm5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:text="크로바약국"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:text="코아약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/hyper"
-            android:textSize="5dp" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
 
-    </LinearLayout>
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="경희정문약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
 
-</LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="고황약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="경희온누리약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="경희메디칼약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="성심약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+<!--        <CheckedTextView-->
+<!--            android:id="@+id/Pharm5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="크로바약국"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/hyper"-->
+<!--            android:textSize="5dp" />-->
+
+<!--    </LinearLayout>-->

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
     <uses-permission android:name="android.permission.CAMERA"> </uses-permission> <!--카메라 권한-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"> </uses-permission>    <!--저장소 읽기 권한-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"> </uses-permission>    <!--저장소 쓰기 권한-->
@@ -48,6 +48,7 @@
         <activity android:name=".Camera" android:label="스캔"/>
         <activity android:name=".Mypage" android:label="마이페이지"/>
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
+        <activity android:name=".PharmListView" android:label="약국리스트"/>
 
         <receiver android:name=".AlertReceiver"/>
 
