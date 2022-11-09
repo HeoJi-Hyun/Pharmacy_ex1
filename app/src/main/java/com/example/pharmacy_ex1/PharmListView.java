@@ -16,14 +16,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.io.InputStream;
+
 
 public class PharmListView extends ArrayAdapter<String> {
 
     private String[] pharmName;
     private Activity context;
 
-
     Bitmap bitmap;
+
 
     public PharmListView(Activity context, String[] pharmName ) {
         super(context, R.layout.pharmlist,pharmName);//pharmlist는 xml이름
@@ -62,5 +64,5 @@ public class PharmListView extends ArrayAdapter<String> {
             tv1=(TextView) v.findViewById(R.id.pharmName);//list레이아웃 textview id가 pharmName
         }
     }
+    }
 
-}

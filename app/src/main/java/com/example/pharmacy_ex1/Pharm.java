@@ -1,27 +1,15 @@
 package com.example.pharmacy_ex1;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.CheckedTextView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -31,25 +19,16 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
 
-public class Pharm extends AppCompatActivity
-//        implements OnMapReadyCallback
-{
-//    private List<String> list;
-//    AutoCompleteTextView auto;
-//    Button btn1;
-//    CheckedTextView tv1, tv2, tv3;
+public class Pharm extends AppCompatActivity {
+
     String urladdress = "http://hjh1963.dothome.co.kr/Pharmlist.php";
     String[] pharmName;
     ListView listView;
     RelativeLayout relativeLayout;
     BufferedInputStream is;
-    String line = null;
-    String result = null;
-
-
-
+    String line=null;
+    String result=null;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -57,13 +36,12 @@ public class Pharm extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pharm);
 
-        listView=(ListView)findViewById(R.id.listview);
-        relativeLayout=(RelativeLayout)findViewById(R.id.relativeLayout);
-
+        listView=(ListView) findViewById(R.id.listview);
+        relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
 
         StrictMode.setThreadPolicy((new StrictMode.ThreadPolicy.Builder().permitNetwork().build()));
         collectData();
-        PharmListView pharmListView = new PharmListView(this, pharmName);
+        PharmListView pharmListView= new PharmListView(this, pharmName);
         listView.setAdapter(pharmListView);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -74,50 +52,50 @@ public class Pharm extends AppCompatActivity
             }
         });
     }
-
     private void collectData()
     {
-        try {
+        try{
 
             URL url = new URL(urladdress);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
             con.setRequestMethod("GET");
-            is = new BufferedInputStream(con.getInputStream());
-            }
-            catch (Exception ex)
-            {
+            is=new BufferedInputStream(con.getInputStream());
+        }
+        catch(Exception ex)
+        {
             ex.printStackTrace();
-           }
+        }
 
-        try {
+        try{
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             StringBuilder sb = new StringBuilder();
-            while ((line = br.readLine()) != null) {
-                sb.append(line + "\n");
+            while ((line = br.readLine())!= null){
+                sb.append(line+"\n");
             }
             is.close();
-            result = sb.toString();
-
-            }
-            catch (Exception ex)
-            {
+            result=sb.toString();
+        }
+        catch (Exception ex)
+        {
             ex.printStackTrace();
-            }
+        }
 
-        try {
+        try{
             JSONArray ja = new JSONArray(result);
             JSONObject jo = null;
             pharmName = new String[ja.length()];
 
-            for (int i = 0; i <= ja.length(); i++) {
-                jo = ja.getJSONObject(i);
-                pharmName[i] = jo.getString("pharmName");
-
+            for(int i=0; i<=ja.length(); i++){
+                jo=ja.getJSONObject(i);
+                pharmName[i]=jo.getString("pharmName");
             }
-        } catch (Exception ex) {
+        }
+        catch (Exception ex){
             ex.printStackTrace();
         }
+    }
+
     }
 //        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
 //        btn1 = (Button) findViewById(R.id.btnPharm1);
@@ -211,4 +189,4 @@ public class Pharm extends AppCompatActivity
 //        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location,10));
 //
 //    }
-}
+

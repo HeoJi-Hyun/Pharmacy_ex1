@@ -1,57 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignParentTop="true">
+    tools:context=".MainActivity">
 
-
-    <ScrollView
-        android:id="@+id/scrollView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_height="250dp"
+        android:background="#ffffff"
+        android:id="@+id/imageContainer">
 
-        <LinearLayout
+        <!--    사진 찍는 버튼    -->
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="TAKE PICTURE"
+            android:textSize= "18dp"
+            android:id="@+id/btnPhoto"/>
 
-            <TextView
-                android:id="@+id/tv_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/scrollView"
-                android:gravity="center"
-                android:text="처리시간" />
+        <!--    사진 보여주는 이미지뷰    -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView" />
 
-            <TextView
-                android:id="@+id/tv_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/scrollView"
-                android:gravity="center"
-                android:text="@string/FirstMessage" />
+    </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/iv_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp" />
-        </LinearLayout>
-    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/OCRButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageContainer"
+        android:clickable="true">
 
+        <!--    텍스트 추출 버튼    -->
+        <Button
+            android:id="@+id/ocrButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="RUN OCR"
+            android:textSize="18dp" />
 
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/btn_OCR"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="사진찍기" />
+        android:layout_below="@id/OCRButtonContainer"
+        android:padding="10dp">
+
+        <!--    텍스트 추출 뷰    -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이곳에 결과 출력"
+            android:id="@+id/OCRTextView"
+            android:textSize="20dp"
+            android:textColor="#169cdf"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            />
+    </RelativeLayout>
 
 </RelativeLayout>
