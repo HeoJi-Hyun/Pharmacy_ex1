@@ -45,10 +45,10 @@
         <activity android:name=".Pharm1" android:label="약국정보"/>
         <activity android:name=".Pharm2" android:label="약국정보"/>
         <activity android:name=".Pharm3" android:label="약국정보"/>
-        <activity android:name=".Camera" android:label="스캔"/>
         <activity android:name=".Mypage" android:label="마이페이지"/>
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
         <activity android:name=".PharmListView" android:label="약국리스트"/>
+        <activity android:name=".Camera" android:label="카메라"/>
 
         <receiver android:name=".AlertReceiver"/>
 
