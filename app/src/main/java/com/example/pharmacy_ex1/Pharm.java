@@ -22,7 +22,7 @@ import java.net.URL;
 
 public class Pharm extends AppCompatActivity {
 
-    String urladdress = "http://hjh1963.dothome.co.kr/Pharmlist.php";
+    String urladdress = "http://hjh1963.dothome.co.kr/pharmlist.php";
     String[] pharmName;
     ListView listView;
     RelativeLayout relativeLayout;
@@ -98,10 +98,7 @@ public class Pharm extends AppCompatActivity {
 
     }
 //        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
-//        btn1 = (Button) findViewById(R.id.btnPharm1);
-//        tv1 = (CheckedTextView)findViewById(R.id.Pharm1);
-//        tv2 = (CheckedTextView)findViewById(R.id.Pharm2);
-//        tv3 = (CheckedTextView)findViewById(R.id.Pharm3);
+
 
 //        list = new ArrayList<String>();
 
