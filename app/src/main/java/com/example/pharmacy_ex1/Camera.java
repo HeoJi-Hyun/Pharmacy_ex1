@@ -12,6 +12,8 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 import com.googlecode.tesseract.android.TessBaseAPI;
 import java.io.File;
 import android.content.Intent;
@@ -44,6 +46,17 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 
 
 public class Camera extends AppCompatActivity implements View.OnClickListener {
@@ -54,12 +67,15 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
 
     Button btn_picture; //사진 찍는 버튼
     Button btn_ocr; //텍스트 추출 버튼
+    Button btn_gal;
 
     private String imageFilePath; //이미지 파일 경로
     private Uri p_Uri;
 
     static final int REQUEST_IMAGE_CAPTURE = 672;
     ImageView imageView;
+
+    private final String TAG = this.getClass().getSimpleName();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -70,6 +86,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         btn_picture = (Button) findViewById(R.id.btnPhoto);
         btn_ocr = (Button) findViewById(R.id.ocrButton);
         imageView = (ImageView) findViewById(R.id.imageView);
+        btn_gal = (Button) findViewById(R.id.btnGal);
         btn_picture.setOnClickListener(this);
 
         //언어파일 경로
@@ -92,6 +109,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         mTess.init(datapath, lang);
 
 
+
         // 텍스트 추출 버튼
         btn_ocr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +128,30 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
                 OCRTextView.setText(OCRresult);
             }
         });
+        btn_gal.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            launcher.launch(intent);
+        });
     }
+    ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == RESULT_OK) {
+                        Log.e(TAG, "result : " + result);
+                        Intent intent = result.getData();
+                        Log.e(TAG, "intent : " + intent);
+                        Uri uri = intent.getData();
+                        Log.e(TAG, "uri : " + uri);
+//                        imageview.setImageURI(uri);
+                        Glide.with(Camera.this)
+                                .load(uri)
+                                .into(imageView);
+                    }
+                }
+            });
 
     private int exifOrientationToDegrees(int exifOrientation) {
         if (exifOrientation == ExifInterface.ORIENTATION_ROTATE_90) {
