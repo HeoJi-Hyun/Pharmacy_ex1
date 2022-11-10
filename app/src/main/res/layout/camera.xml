@@ -63,7 +63,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/OCRButtonContainer"
         android:padding="10dp">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <!--    텍스트 추출 뷰    -->
         <TextView
             android:id="@+id/OCRTextView"
@@ -74,6 +76,7 @@
             android:text="이곳에 결과 출력"
             android:textColor="#169cdf"
             android:textSize="24sp" />
+</ScrollView>
     </RelativeLayout>
 
 </RelativeLayout>
