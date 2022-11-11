@@ -4,6 +4,7 @@ package com.example.pharmacy_ex1;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -113,56 +114,56 @@ public class Chek extends Activity {
                 str12 = togle12.getTextOff().toString();
 
                 Intent intent = new Intent(getApplicationContext(), My_Chek.class);
-                    if (togle1.isChecked()) {
-                        intent.putExtra("a", str1);
-                    } else {
-                    }
-                    if (togle2.isChecked()) {
-                        intent.putExtra("b", str2);
-                    } else {
-                    }
-                    if (togle3.isChecked()) {
-                        intent.putExtra("c", str3);
-                    } else {
-                    }
-                    if (togle4.isChecked()) {
-                        intent.putExtra("d", str4);
-                    } else {
-                    }
-                    if (togle5.isChecked()) {
-                        intent.putExtra("e", str6);
-                    } else {
-                    }
-                    if (togle6.isChecked()) {
-                        intent.putExtra("f", str6);
-                    } else {
-                    }
-                    if (togle7.isChecked()) {
-                        intent.putExtra("g", str7);
-                    } else {
-                    }
-                    if (togle8.isChecked()) {
-                        intent.putExtra("h", str8);
-                    } else {
-                    }
-                    if (togle9.isChecked()) {
-                        intent.putExtra("i", str9);
-                    } else {
-                    }
-                    if (togle10.isChecked()) {
-                        intent.putExtra("j", str10);
-                    } else {
-                    }
-                    if (togle11.isChecked()) {
-                        intent.putExtra("k", str11);
-                    } else {
-                    }
-                    if (togle12.isChecked()) {
-                        intent.putExtra("l", str12);
-                    } else {
-                    }
-                    startActivity(intent);
+                if (togle1.isChecked()) {
+                    intent.putExtra("a", str1);
+                } else {
                 }
+                if (togle2.isChecked()) {
+                    intent.putExtra("b", str2);
+                } else {
+                }
+                if (togle3.isChecked()) {
+                    intent.putExtra("c", str3);
+                } else {
+                }
+                if (togle4.isChecked()) {
+                    intent.putExtra("d", str4);
+                } else {
+                }
+                if (togle5.isChecked()) {
+                    intent.putExtra("e", str6);
+                } else {
+                }
+                if (togle6.isChecked()) {
+                    intent.putExtra("f", str6);
+                } else {
+                }
+                if (togle7.isChecked()) {
+                    intent.putExtra("g", str7);
+                } else {
+                }
+                if (togle8.isChecked()) {
+                    intent.putExtra("h", str8);
+                } else {
+                }
+                if (togle9.isChecked()) {
+                    intent.putExtra("i", str9);
+                } else {
+                }
+                if (togle10.isChecked()) {
+                    intent.putExtra("j", str10);
+                } else {
+                }
+                if (togle11.isChecked()) {
+                    intent.putExtra("k", str11);
+                } else {
+                }
+                if (togle12.isChecked()) {
+                    intent.putExtra("l", str12);
+                } else {
+                }
+                startActivity(intent);
+            }
         });
     }
     private void settingList() {
@@ -178,6 +179,7 @@ public class Chek extends Activity {
         list.add("무릎 관절증");
         list.add("당뇨병");
     }
+
 
 
 }
