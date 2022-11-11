@@ -48,13 +48,14 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
+
         <Button
             android:id="@+id/btnChek2"
             android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/button_login"
-            android:text="저장"
+            android:text="확인"
             android:textSize="24sp" />
 
         <ScrollView

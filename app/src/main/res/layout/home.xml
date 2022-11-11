@@ -82,95 +82,105 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:gravity="center"
+                android:layout_height="293dp"
                 android:orientation="horizontal">
 
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="23dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvhome1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="• 약 이름 1"-->
+<!--                        android:textColor="#FD730E"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvhome2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:text="• 약 이름 2"-->
+<!--                        android:textColor="#FD730E"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvhome3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:text="• 약 이름 3"-->
+<!--                        android:textColor="#FD730E"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvhome4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_weight="0"-->
+<!--                        android:text="• 약 이름 4"-->
+<!--                        android:textColor="#FD730E"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="23dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_weight="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:gravity="center_horizontal"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/tvhome1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="• 약 이름 1"
-                        android:textColor="#FD730E"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tvhome2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="• 약 이름 2"
-                        android:textColor="#FD730E"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tvhome3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="• 약 이름 3"
-                        android:textColor="#FD730E"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tvhome4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_weight="0"
-                        android:text="• 약 이름 4"
-                        android:textColor="#FD730E"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <FrameLayout
-                    android:layout_width="208dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
-                    android:layout_marginTop="5dp">
-
-
-                    <ImageView
-                        android:id="@+id/imagehome1"
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="169dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/memo" />
+                        android:layout_height="match_parent">
 
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="108dp"
-                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/memook"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="104dp"
+                            android:background="@drawable/button_join"
+                            android:backgroundTint="@color/white"
+                            android:text="저장"
+                            android:textColor="#99000000"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/edithome1"
+                            app:layout_constraintStart_toStartOf="@+id/edithome1"
+                            app:layout_constraintTop_toTopOf="@+id/edithome1"
+                            app:layout_constraintVertical_bias="0.914" />
 
                         <EditText
                             android:id="@+id/edithome1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="40dp"
+                            android:layout_width="280dp"
+                            android:layout_height="249dp"
+                            android:background="@drawable/memo"
+                            android:gravity="center"
                             android:hint="메모를 입력하세요"
                             android:inputType="textPersonName"
                             android:textColor="#353535"
                             android:textColorHint="#505050"
                             android:textSize="20sp"
-                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.262"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"  />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    </LinearLayout>
-                </FrameLayout>
+
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
     <LinearLayout

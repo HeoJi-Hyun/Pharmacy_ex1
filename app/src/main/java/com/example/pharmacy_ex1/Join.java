@@ -65,16 +65,6 @@ public class Join extends MainActivity{
                 RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(Join.this);
                 queue.add(registerRequest);
-
-//                Intent intent1 = new Intent(Join.this, MainActivity.class);
-//                startActivity(intent1);
-//
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                intent.putExtra("id", Integer.parseInt(edittextId2.getText().toString()));
-//                intent.putExtra("pass",Integer.parseInt(edittextPw2.getText().toString()));
-//
-//                startActivity(intent);
-
             }
         });
     }

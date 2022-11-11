@@ -368,13 +368,22 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/mychek_ok"
+            android:id="@+id/mychek_re"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/button_login"
             android:text="수정"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/mychek_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_login"
+            android:text="완료"
             android:textSize="24sp" />
 
     </LinearLayout>
