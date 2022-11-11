@@ -78,7 +78,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         btnMy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent8 = new Intent(Home.this, AA.class);
+                Intent intent8 = new Intent(Home.this, Mypage.class);
 
                 startActivity(intent8);
             }
