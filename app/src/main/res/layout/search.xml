@@ -9,41 +9,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/pharmacy"
+        android:background="#FBFBFB"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:paddingTop="10sp">
 
-        <ImageView
-            android:id="@+id/imageRe1"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/search" />
 
         <AutoCompleteTextView
-            android:id="@+id/reSearch"
+            android:id="@+id/autoPharm"
             android:layout_width="309dp"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_round"
             android:completionHint="검색어를 입력하세요."
             android:completionThreshold="1"
-            android:gravity="center_vertical"
+            android:gravity="center_horizontal"
             android:textColorHint="#555555"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/btnRe1"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_round"
-            android:text="검색"
+            android:id="@+id/btnPharm1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/search1"
             android:textColor="@color/black"
             android:textSize="20sp" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="#16FFFFFF"
         android:orientation="vertical">
 
         <CheckedTextView
@@ -93,6 +89,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+
         <CheckedTextView
             android:id="@+id/autoText8"
             android:layout_width="match_parent"
@@ -108,6 +105,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+
         <CheckedTextView
             android:id="@+id/autoText4"
             android:layout_width="match_parent"
@@ -123,6 +121,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+
         <CheckedTextView
             android:id="@+id/autoText5"
             android:layout_width="match_parent"
@@ -138,6 +137,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+
         <CheckedTextView
             android:id="@+id/autoText6"
             android:layout_width="match_parent"
@@ -153,6 +153,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/hyper"
             android:textSize="5dp" />
+
         <CheckedTextView
             android:id="@+id/autoText7"
             android:layout_width="match_parent"
