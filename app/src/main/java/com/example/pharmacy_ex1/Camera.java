@@ -68,6 +68,8 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
     Button btn_picture; //사진 찍는 버튼
     Button btn_ocr; //텍스트 추출 버튼
     Button btn_gal;
+    Button btn_my;
+    TextView tv;
 
     private String imageFilePath; //이미지 파일 경로
     private Uri p_Uri;
@@ -88,6 +90,8 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         imageView = (ImageView) findViewById(R.id.imageView);
         btn_gal = (Button) findViewById(R.id.btnGal);
         btn_picture.setOnClickListener(this);
+        btn_my = (Button)findViewById(R.id.mypage);
+        tv = (TextView)findViewById(R.id.OCRTextView);
 
         //언어파일 경로
         datapath = getFilesDir() + "/tesseract/";
@@ -108,6 +112,14 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         mTess = new TessBaseAPI();
         mTess.init(datapath, lang);
 
+        btn_my.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (tv.getText() !==0{
+
+                }
+            }
+        });
 
 
         // 텍스트 추출 버튼
