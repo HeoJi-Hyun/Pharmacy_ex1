@@ -49,7 +49,6 @@
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
         <activity android:name=".PharmListView" android:label="약국리스트"/>
         <activity android:name=".Camera" android:label="카메라"/>
-        <activity android:name=".Camera_ok" android:label="마이페이지카메라"/>
 
         <receiver android:name=".AlertReceiver"/>
 

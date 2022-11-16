@@ -14,14 +14,14 @@
         android:paddingTop="10sp">
 
         <ImageView
-            android:id="@+id/imageRe1"
+            android:id="@+id/imageTac1"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:src="@drawable/search" />
 
         <AutoCompleteTextView
-            android:id="@+id/reSearch"
+            android:id="@+id/reTacSearch"
             android:layout_width="309dp"
             android:layout_height="48dp"
             android:completionHint="검색어를 입력하세요."
@@ -31,7 +31,7 @@
             android:textColorHint="#555555" />
 
         <Button
-            android:id="@+id/btnRe1"
+            android:id="@+id/btnReTac1"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_round"
@@ -50,7 +50,7 @@
             android:id="@+id/tvtac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="타이레놀"
+            android:text="탁센"
             android:textColor="#000000"
             android:textSize="30sp" />
 
@@ -58,14 +58,14 @@
             android:id="@+id/tctmg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="500 mg"
+            android:text="250 mg"
             android:textColor="#C8C8C8" />
 
         <TextView
             android:id="@+id/tvtc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 존슨앤드존슨"
+            android:text=" 녹십자"
             android:textColor="#C8C8C8" />
     </LinearLayout>
 
@@ -75,7 +75,7 @@
         android:orientation="horizontal">
 
         <RatingBar
-            android:id="@+id/ratingBarInficator"
+            android:id="@+id/ratingBarInficator1"
             style="@style/Widget.AppCompat.RatingBar.Indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,49 +85,48 @@
             android:stepSize="3" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/textView34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="복용자의"
             android:textColor="#C8C8C8" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/tvTacP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#C8C8C8" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/textView265"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="가 만족했어요."
             android:textColor="#C8C8C8" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="528dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ListView
-            android:id="@+id/all_List"
+            android:id="@+id/tac_List"
             android:layout_width="match_parent"
-            android:layout_height="511dp" />
+            android:layout_height="522dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtontac"
+            android:layout_width="63dp"
+            android:layout_height="78dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="180dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbtn"
+            android:contentDescription="@string/app_name"
+            android:minHeight="100dp"
+            app:srcCompat="@drawable/ppp" />
 
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/ibtw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="180dp"
-        android:layout_marginRight="180dp"
-        android:layout_weight="1"
-        android:background="@drawable/roundbtn"
-        android:contentDescription="@string/app_name"
-        android:minHeight="100dp"
-        app:srcCompat="@drawable/ppp" />
 </LinearLayout>
