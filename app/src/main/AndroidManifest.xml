@@ -49,6 +49,13 @@
         <activity android:name=".My_Chek" android:label="내 체크리스트"/>
         <activity android:name=".PharmListView" android:label="약국리스트"/>
         <activity android:name=".Camera" android:label="카메라"/>
+        <activity android:name=".ReviewAll" android:label="타이레놀리뷰리스트"/>
+        <activity android:name=".ReviewTac" android:label="탁센리뷰리스트"/>
+        <activity android:name=".ReviewOko" android:label="경옥고리뷰리스트"/>
+        <activity android:name=".RePencle" android:label="리뷰쓰는창"/>
+        <activity android:name=".Review_Ditail" android:label="리뷰"/>
+
+
 
         <receiver android:name=".AlertReceiver"/>
 
