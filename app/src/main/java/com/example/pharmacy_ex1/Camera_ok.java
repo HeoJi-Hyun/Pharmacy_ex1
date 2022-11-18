@@ -18,7 +18,7 @@ public class Camera_ok extends Activity {
     EditText tv;
     Button btnok, btnsave, btndelete;
     TextView tvmed, list;
-    private CameraDao CD;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -36,10 +36,7 @@ public class Camera_ok extends Activity {
         v1 = intent.getStringExtra("a");
         tv.setText(v1);
 
-        AppDatabase db = Room.databaseBuilder(this, AppDatabase.class,"camera-db")
-                .allowMainThreadQueries()
-                .build();
-        list.setText(db.cameraDao().getAll().toString());
+
 
                 btnok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -49,20 +46,6 @@ public class Camera_ok extends Activity {
                 if(text != null)
                     tvmed.setText(text);
                 tv.setText("");
-            }
-        });
-        btnsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                db.cameraDao().insert(new My_camera(tvmed.getText().toString()));
-                list.setText(db.cameraDao().getAll().toString());
-            }
-        });
-        btndelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
             }
         });
     }

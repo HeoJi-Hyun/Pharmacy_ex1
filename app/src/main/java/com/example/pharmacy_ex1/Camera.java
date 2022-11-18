@@ -101,7 +101,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onClick(View view) {
                 text = tv.getText().toString();
-                Intent intent = new Intent(getApplicationContext(), Camera_ok.class);
+                Intent intent = new Intent(getApplicationContext(), Main.class);
                 intent.putExtra("a", text);
                 startActivity(intent);
 
