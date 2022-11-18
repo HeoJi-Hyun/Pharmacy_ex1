@@ -1,12 +1,17 @@
 package com.example.pharmacy_ex1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -41,6 +46,7 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.core.app.ActivityCompat;
 
 
 public class Camera extends AppCompatActivity implements View.OnClickListener {
@@ -64,6 +70,12 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
 
     private final String TAG = this.getClass().getSimpleName();
 
+    final static int TAKE_PICTURE = 1;
+    final static int CROP_PICTURE = 2;
+    private Uri pictureUri;
+
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,18 +96,26 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         //트레이닝데이터가 카피되어 있는지 체크
         checkFile(new File(datapath + "tessdata/"), "kor");
         checkFile(new File(datapath + "tessdata/"), "eng");
-
-
-        /**
-         * Tesseract API
-         * 한글 + 영어(함께 추출)
-         * 한글만 추출하거나 영어만 추출하고 싶다면
-         * String lang = "eng"와 같이 작성해도 무관
-         **/
         String lang = "kor+eng";
 
         mTess = new TessBaseAPI();
         mTess.init(datapath, lang);
+
+        //Uri exposure 무시
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
+
+        //권한 요청
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){ //안드로이드 버전확인
+            //권한 허용이 됐는지 확인
+            if(checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+
+            }
+            else { //권한 허용 요청
+                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+        }
+
 
         btn_my.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,6 +147,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
                 OCRTextView.setText(OCRresult);
             }
         });
+        //갤러리 실행
         btn_gal.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setType("image/*");
@@ -134,6 +155,15 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
             launcher.launch(intent);
         });
     }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if(grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED && grantResults[2] == PackageManager.PERMISSION_GRANTED){
+
+        }
+    }
+
     ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -173,6 +203,46 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            //크롭된 이미지 가져와서 이미지뷰에 보여주기
+            case TAKE_PICTURE:
+                if (resultCode == RESULT_OK && data.hasExtra("data")) { //데이터를 가지고 있는지 확인
+                    final Bundle extras = data.getExtras();
+
+                    if (extras != null) {
+                        Bitmap photo = extras.getParcelable("data"); //크롭한 이미지 가져오기
+                        imageView.setImageBitmap(photo); //이미지뷰에 넣기
+                    }
+
+                    // 임시 파일 삭제
+                    File f = new File(pictureUri.getPath());
+                    if (f.exists())
+                        f.delete();
+
+                    break;
+                }
+                break;
+
+            // 이미지 크롭
+            case CROP_PICTURE: {
+                // 이미지를 가져온 이후의 리사이즈할 이미지 크기를 결정합니다.
+                // 이후에 이미지 크롭 어플리케이션을 호출하게 됩니다.
+
+                Intent intent = new Intent("com.android.camera.action.CROP");
+                intent.setDataAndType(pictureUri, "image/*");
+
+                intent.putExtra("outputX", 200); //크롭한 이미지 x축 크기
+                intent.putExtra("outputY", 200); //크롭한 이미지 y축 크기
+//                intent.putExtra("aspectX", 1); //크롭 박스의 x축 비율
+//                intent.putExtra("aspectY", 1); //크롭 박스의 y축 비율
+                intent.putExtra("scale", true);
+                intent.putExtra("return-data", true);
+                startActivityForResult(intent, TAKE_PICTURE);
+
+                break;
+            }
+        }
 
         if(requestCode == 0 && resultCode == RESULT_OK) {
             // Bundle로 데이터를 입력
@@ -268,14 +338,29 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
     }
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            // 카메라촬영 클릭 이벤트
+        switch (view.getId())
+        {
+            // 버튼 눌렀을 때, 카메라에서 이미지 가져오기
             case R.id.btnPhoto:
-                // 카메라 기능을 Intent
-                Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(i, 0);
+                Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+                // 임시로 사용할 파일의 경로를 생성
+                String url = "tmp_" + String.valueOf(System.currentTimeMillis()) + ".jpg";
+                pictureUri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(), url));
+
+                cameraIntent.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, pictureUri);
+                cameraIntent.putExtra("return-data", true);
+                startActivityForResult(cameraIntent, CROP_PICTURE);
                 break;
         }
+//        switch (view.getId()) {
+//            // 카메라촬영 클릭 이벤트
+//            case R.id.btnPhoto:
+//                // 카메라 기능을 Intent
+//                Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivityForResult(i, 0);
+//                break;
+//        }
     }
 }
 
