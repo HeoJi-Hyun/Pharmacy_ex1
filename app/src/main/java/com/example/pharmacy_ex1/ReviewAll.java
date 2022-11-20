@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -42,7 +43,7 @@ public class ReviewAll extends AppCompatActivity {
 
     // 사용할 컴포넌트 선언
     ListView all_List;
-    Button ibtw;
+    ImageButton ibtw;
     String userid = "";
 
     // 리스트뷰에 사용할 제목 배열
@@ -51,13 +52,14 @@ public class ReviewAll extends AppCompatActivity {
     // 클릭했을 때 어떤 게시물을 클릭했는지 게시물 번호를 담기 위한 배열
     ArrayList<String> seqList = new ArrayList<>();
 
-    @SuppressLint("WrongViewCast")
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reviewall);
 
-        // LoginActivity 에서 넘긴 userid 값 받기
+// LoginActivity 에서 넘긴 userid 값 받기
         userid = getIntent().getStringExtra("userid");
 
         // 컴포넌트 초기화

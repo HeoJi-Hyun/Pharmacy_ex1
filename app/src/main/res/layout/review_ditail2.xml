@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:padding="16dp"
     android:layout_height="match_parent"
-
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +26,10 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:text="제목"/>
+                    android:text="제목"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/title_tv"
@@ -38,7 +39,8 @@
                     android:background="#eeeeee"
                     android:padding="16dp"
                     android:text="제목입니다."
-                    android:textColor="#000000" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +51,10 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:padding="16dp"
-                    android:text="작성일"/>
+                    android:text="작성일"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/date_tv"
@@ -59,59 +64,30 @@
                     android:background="#eeeeee"
                     android:padding="16dp"
                     android:text="작성일입니다."
-                    android:textColor="#000000" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RatingBar
-                    android:id="@+id/ratingBar"
-                    style="@style/Widget.AppCompat.RatingBar.Indicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:numStars="5"
-                    android:progressBackgroundTint="#B6B6B6"
-                    android:progressTint="#FFEB3B"
-                    android:stepSize="4"
-                    android:layout_gravity="left"/>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-                <ImageButton
-                    android:id="@+id/ibtw"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="0"
-                    android:background="@drawable/roundbtn"
-                    android:contentDescription="@string/app_name"
-                    android:minHeight="100dp"
-                    app:srcCompat="@drawable/picpic"
-                    android:layout_gravity="right"/>
-
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="내용"/>
+                android:text="내용"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/content_tv"
                 android:layout_width="match_parent"
-                android:layout_height="491dp"
+                android:layout_height="519dp"
                 android:background="#eeeeee"
                 android:padding="16dp"
                 android:text="내용입니다."
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

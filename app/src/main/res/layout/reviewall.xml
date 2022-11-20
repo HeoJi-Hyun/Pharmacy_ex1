@@ -109,23 +109,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="528dp"
+        android:layout_height="499dp"
         android:orientation="vertical">
 
         <ListView
             android:id="@+id/all_List"
             android:layout_width="match_parent"
-            android:layout_height="511dp" />
+            android:layout_height="490dp" />
 
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/ibtw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginLeft="180dp"
         android:layout_marginRight="180dp"
-        android:layout_weight="1"
         android:background="@drawable/roundbtn"
         android:contentDescription="@string/app_name"
         android:minHeight="100dp"

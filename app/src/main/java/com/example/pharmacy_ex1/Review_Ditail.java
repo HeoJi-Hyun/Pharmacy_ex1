@@ -29,7 +29,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
-
 public class Review_Ditail extends AppCompatActivity {
 
     // 로그에 사용할 TAG
@@ -37,9 +36,6 @@ public class Review_Ditail extends AppCompatActivity {
 
     // 사용할 컴포넌트 선언
     TextView title_tv, content_tv, date_tv;
-    LinearLayout comment_layout;
-    EditText comment_et;
-    Button reg_button;
 
     // 선택한 게시물의 번호
     String board_seq = "";
@@ -62,25 +58,28 @@ public class Review_Ditail extends AppCompatActivity {
         date_tv = findViewById(R.id.date_tv);
 
 
+
+
+
 // 해당 게시물의 데이터 불러오기
         InitData();
 
     }
 
-    private void InitData() {
+    private void InitData(){
 
 // 해당 게시물의 데이터를 읽어오는 함수, 파라미터로 보드 번호를 넘김
-        LoadBoard loadBoard = new LoadBoard() {
-            @Override
-            protected String doInBackground(String... strings) {
-                return null;
-            }
-        };
+        LoadBoard loadBoard = new LoadBoard();
         loadBoard.execute(board_seq);
 
     }
 
-    abstract class LoadBoard extends AsyncTask<String, Void, String> {
+    class LoadBoard extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected String doInBackground(String... strings) {
+            return null;
+        }
 
         @Override
         protected void onPreExecute() {
@@ -160,13 +159,7 @@ public class Review_Ditail extends AppCompatActivity {
                 }
 
                 return response;
-            }
+               }
         }
     }
 }
-
-
-
-
-
-

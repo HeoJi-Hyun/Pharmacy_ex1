@@ -29,15 +29,17 @@ public class RePencle extends AppCompatActivity{
     // 사용할 컴포넌트 선언
     EditText title_et, content_et;
     Button reg_button;
-    private String id;
+
+    // 유저아이디 변수
+    String userid = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.repencle);
 
-// reviewall 에서 넘긴 userid 를 변수로 받음
-        id = getIntent().getStringExtra("userid");
+// ListActivity 에서 넘긴 userid 를 변수로 받음
+        userid = getIntent().getStringExtra("userid");
 
 // 컴포넌트 초기화
         title_et = findViewById(R.id.title_et);
@@ -50,7 +52,7 @@ public class RePencle extends AppCompatActivity{
             public void onClick(View view) {
 // 게시물 등록 함수
                 RegBoard regBoard = new RegBoard();
-                regBoard.execute(id, title_et.getText().toString(), content_et.getText().toString());
+                regBoard.execute(userid, title_et.getText().toString(), content_et.getText().toString());
             }
         });
 
