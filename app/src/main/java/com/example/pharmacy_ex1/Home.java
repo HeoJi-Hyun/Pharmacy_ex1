@@ -46,16 +46,7 @@ public class Home extends Activity  implements OnMapReadyCallback{
         pref = getSharedPreferences("pref", Activity.MODE_PRIVATE);
         editor = pref.edit();
 
-        //임시리뷰 버튼 클릭시 액티비티 전환
-        Button developer_info_btn = (Button) findViewById(R.id.rvbtn);
-        developer_info_btn.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), Imsherelist.class);
-                startActivity(intent);
-            }
-        });
         // 2. 저장해둔 값 불러오기 ("식별값", 초기값) -> 식별값과 초기값은 직접 원하는 이름과 값으로 작성.
         myStr = pref.getString("MyStr", "_");   // String 불러오기 (저장해둔 값 없으면 초기값인 _으로 불러옴)
 

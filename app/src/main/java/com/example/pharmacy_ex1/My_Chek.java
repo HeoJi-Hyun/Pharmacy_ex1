@@ -30,7 +30,7 @@ public class My_Chek extends Activity {
 
 
         mychek_re = (Button) findViewById(R.id.mychek_re);
-        mychek_ok = (Button) findViewById(R.id.mychek_ok);
+
         tv1 = (TextView) findViewById(R.id.myChek1);
         tv2 = (TextView) findViewById(R.id.myChek2);
         tv3 = (TextView) findViewById(R.id.myChek3);

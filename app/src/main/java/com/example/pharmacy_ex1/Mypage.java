@@ -28,7 +28,7 @@ public class Mypage extends Activity {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(Mypage.this, Camera_ok.class);
+                Intent intent2 = new Intent(Mypage.this, My_camera.class);
                 startActivity(intent2);
             }
         });

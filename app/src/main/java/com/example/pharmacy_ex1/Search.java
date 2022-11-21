@@ -30,8 +30,7 @@ public class Search extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search);
 
-        auto = (AutoCompleteTextView) findViewById(R.id.reSearch);
-        btn1 = (Button)findViewById(R.id.btnRe1);
+
         tv1 = (CheckedTextView)findViewById(R.id.autoText1);
         tv2 = (CheckedTextView)findViewById(R.id.autoText2);
         tv3 = (CheckedTextView)findViewById(R.id.autoText3);
@@ -41,11 +40,6 @@ public class Search extends Activity {
         // 리스트에 검색될 데이터(단어)를 추가한다.
         settingList();
 
-        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.reSearch);
-
-        // AutoCompleteTextView 에 아답터를 연결한다.
-        autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line,  list ));
     }
     // 검색에 사용될 데이터를 리스트에 추가한다.
     private void settingList(){
