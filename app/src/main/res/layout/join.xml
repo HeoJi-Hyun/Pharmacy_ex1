@@ -67,17 +67,6 @@
         android:textColor="#2C2C2C"
         android:textColorHint="#5D5D5D" />
 
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="186dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_login"
-        android:backgroundTint="#FE730E"
-        android:text="약국번가 시작하기"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,32 +84,41 @@
                 android:id="@+id/togJoin1"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="치매"
                 android:textOn="치매 O"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <ToggleButton
                 android:id="@+id/togJoin2"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="노년백내장"
                 android:textOn="노년백내장 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin3"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="폐렴"
                 android:textOn="폐렴 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -133,31 +131,40 @@
                 android:id="@+id/togJoin4"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="뇌경색증"
                 android:textOn="뇌경색증 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin5"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="신장병"
                 android:textOn="신장병 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin6"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="어지럼증"
                 android:textOn="어지럼증 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,31 +176,40 @@
                 android:id="@+id/togJoin7"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="심부전"
                 android:textOn="심부전 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin8"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="골절"
                 android:textOn="골절 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin9"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="척추병증"
                 android:textOn="척추병증 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -205,35 +221,55 @@
                 android:id="@+id/togJoin10"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="무릎관절증"
                 android:textOn="무릎관절증 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin11"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="당뇨병"
                 android:textOn="당뇨병 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ToggleButton
                 android:id="@+id/togJoin12"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
-                android:backgroundTint="#B73C3C3C"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_round"
                 android:text="ToggleButton"
+                android:textColor="@color/pharmacy"
                 android:textOff="담석증"
                 android:textOn="담석증 O"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_login"
+        android:backgroundTint="#FE730E"
+        android:text="약국번가 시작하기"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

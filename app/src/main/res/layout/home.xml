@@ -11,24 +11,23 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="69dp"
         android:background="@color/pharmacy">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-
-            android:background="@drawable/menu"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <LinearLayout
             android:layout_width="249dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/homeMy"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/mypageicon"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView"
@@ -41,15 +40,16 @@
                 android:textColor="#FFFFFF"
                 android:textSize="34sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <Button
             android:id="@+id/homeProv"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/search"
+            android:background="@drawable/rjator"
             android:minHeight="48dp"
             android:textColor="#291717"
             android:textSize="20sp"
@@ -58,7 +58,7 @@
 <!--    상단끝-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="659dp"
         android:layout_weight="1">
 
         <LinearLayout
@@ -82,113 +82,101 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="293dp"
-                android:orientation="horizontal">
+                android:layout_height="400dp"
+                android:orientation="vertical">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="23dp"-->
-<!--                    android:layout_marginTop="30dp"-->
-<!--                    android:orientation="vertical">-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="23dp"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:orientation="vertical">-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/tvhome1"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="• 약 이름 1"-->
-<!--                        android:textColor="#FD730E"-->
-<!--                        android:textSize="20sp"-->
-<!--                        android:textStyle="bold" />-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvhome1"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="• 약 이름 1"-->
+                <!--                        android:textColor="#FD730E"-->
+                <!--                        android:textSize="20sp"-->
+                <!--                        android:textStyle="bold" />-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/tvhome2"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:text="• 약 이름 2"-->
-<!--                        android:textColor="#FD730E"-->
-<!--                        android:textSize="20sp"-->
-<!--                        android:textStyle="bold" />-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvhome2"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:text="• 약 이름 2"-->
+                <!--                        android:textColor="#FD730E"-->
+                <!--                        android:textSize="20sp"-->
+                <!--                        android:textStyle="bold" />-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/tvhome3"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:text="• 약 이름 3"-->
-<!--                        android:textColor="#FD730E"-->
-<!--                        android:textSize="20sp"-->
-<!--                        android:textStyle="bold" />-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvhome3"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:text="• 약 이름 3"-->
+                <!--                        android:textColor="#FD730E"-->
+                <!--                        android:textSize="20sp"-->
+                <!--                        android:textStyle="bold" />-->
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/tvhome4"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:layout_weight="0"-->
-<!--                        android:text="• 약 이름 4"-->
-<!--                        android:textColor="#FD730E"-->
-<!--                        android:textSize="20sp"-->
-<!--                        android:textStyle="bold" />-->
-<!--                </LinearLayout>-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvhome4"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:layout_weight="0"-->
+                <!--                        android:text="• 약 이름 4"-->
+                <!--                        android:textColor="#FD730E"-->
+                <!--                        android:textSize="20sp"-->
+                <!--                        android:textStyle="bold" />-->
+                <!--                </LinearLayout>-->
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="310dp"
+                    android:layout_height="350dp"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/memook"
-                            android:layout_width="70dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="104dp"
-                            android:background="@drawable/button_join"
-                            android:backgroundTint="@color/white"
-                            android:text="저장"
-                            android:textColor="#99000000"
-                            android:textSize="20dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/edithome1"
-                            app:layout_constraintStart_toStartOf="@+id/edithome1"
-                            app:layout_constraintTop_toTopOf="@+id/edithome1"
-                            app:layout_constraintVertical_bias="0.914" />
+                        android:layout_height="343dp"
+                        android:orientation="vertical">
 
                         <EditText
                             android:id="@+id/edithome1"
-                            android:layout_width="280dp"
+                            android:layout_width="432dp"
                             android:layout_height="249dp"
-                            android:background="@drawable/memo"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10sp"
+                            android:background="@drawable/rounddark"
+                            android:foregroundGravity="center"
                             android:gravity="center"
                             android:hint="메모를 입력하세요"
                             android:inputType="textPersonName"
                             android:textColor="#353535"
                             android:textColorHint="#505050"
                             android:textSize="20sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.877"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.508"
                             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                         <Button
-                            android:id="@+id/rvbtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginBottom="128dp"
-                            android:text="임시리뷰"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                            android:id="@+id/memook"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10sp"
+                            android:background="@drawable/button_join"
+                            android:text="메모저장"
+                            android:textColor="#99000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -202,24 +190,23 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/homeMy"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/icon3"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <Button
             android:id="@+id/homePharm"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/pharm"
+            android:background="@drawable/dirrnr"
             android:textColor="#D3D3D3"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/rvbtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/review2"
+             />
 
         <ImageButton
             android:id="@+id/homeCamera"
@@ -229,7 +216,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/button_camera"
             android:padding="0dp"
-            android:src="@drawable/camera"
+            android:src="@drawable/scan50"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -238,7 +225,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="@drawable/alarm"
+            android:background="@drawable/alarm2"
             android:minHeight="48dp"
             android:textColor="#291717"
             android:textSize="20sp"

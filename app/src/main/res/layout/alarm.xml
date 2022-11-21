@@ -24,8 +24,8 @@
 
     <Button
         android:id="@+id/time_btn"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50sp"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -34,20 +34,20 @@
         android:text="알람 설정하기"
         android:textAlignment="center"
         android:textColor="@color/pharmacy"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/alarm_cancel_btn"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50sp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="27dp"
         android:background="@drawable/button_login"
         android:text="@string/cnlth"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
 
