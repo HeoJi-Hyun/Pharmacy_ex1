@@ -9,14 +9,14 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 public class Mypage extends Activity {
-    Button chek, camera;
+    Button chek, review;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage);
 
         chek = (Button) findViewById(R.id.btnMy2);
-        camera = (Button)findViewById(R.id.btnMy4);
+        review = (Button)findViewById(R.id.btnMy4);
 
         chek.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,10 +25,10 @@ public class Mypage extends Activity {
                 startActivity(intent1);
             }
         });
-        camera.setOnClickListener(new View.OnClickListener() {
+        review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(Mypage.this, My_camera.class);
+                Intent intent2 = new Intent(Mypage.this, Review.class);
                 startActivity(intent2);
             }
         });
