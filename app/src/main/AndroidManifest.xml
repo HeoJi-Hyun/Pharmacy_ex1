@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
     <uses-permission android:name="android.permission.CAMERA"> </uses-permission> <!--카메라 권한-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"> </uses-permission>    <!--저장소 읽기 권한-->
@@ -10,7 +13,7 @@
     <uses-feature android:name="android.hardware.camera" android:required="true"/>
     <application
         android:usesCleartextTraffic="true"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +22,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA9c0dBtwV9h4NwJR0FA3oY1Tls31IlXMc" />
+
         <uses-library android:name="com.google.android.maps" />
         <uses-library
             android:name="org.apache.http.legacy"
@@ -51,6 +59,8 @@
         <activity android:name=".Camera" android:label="카메라"/>
         <activity android:name=".Main" android:label="제발"/>
 
+        <activity android:name=".Review" android:label="옷벗어."/>
+
 
         <receiver android:name=".AlertReceiver"/>
 
@@ -58,7 +68,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC-F45JLzJoSY5rxgIfBDOB72PYtCNHIUg"/>
+            android:value="AIzaSyA9c0dBtwV9h4NwJR0FA3oY1Tls31IlXMc"/>
 
     </application>
 

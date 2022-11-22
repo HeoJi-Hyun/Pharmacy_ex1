@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+
+    android:id="@+id/layout_main"
     android:orientation="vertical"
-    tools:context=".Home">
+    >
     <!--    tools:context=".Home"-->
 
     <LinearLayout
@@ -22,8 +24,8 @@
 
             <Button
                 android:id="@+id/homeMy"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/mypageicon"
@@ -55,7 +57,7 @@
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </LinearLayout>
-<!--    상단끝-->
+<!-- 상단끝 + 지도 부분(fragment,bu,text) 추가-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="659dp"
@@ -74,10 +76,31 @@
 
 
                 <fragment
-                    android:id="@+id/googleMap"
-                    class="com.google.android.gms.maps.MapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:id="@+id/map"
+
+                    tools:context=".MapsActivity"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:text="장소검색"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:id="@+id/button"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </FrameLayout>
 
             <LinearLayout
@@ -191,8 +214,8 @@
 
         <Button
             android:id="@+id/homePharm"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/dirrnr"
@@ -202,11 +225,11 @@
 
         <Button
             android:id="@+id/rvbtn"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_margin="10sp"
             android:background="@drawable/review2"
-             />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/homeCamera"
