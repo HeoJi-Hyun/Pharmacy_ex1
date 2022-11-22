@@ -13,13 +13,13 @@ import static androidx.room.OnConflictStrategy.REPLACE;
 public interface MainDa
 {
     @Insert(onConflict = REPLACE)
-    void insert(MainDat mainDat);
+    void insert(MainDat mainData);
 
     @Delete
-    void delete(MainDat mainDat);
+    void delete(MainDat mainData);
 
     @Delete
-    void reset(List<MainDat> mainDat);
+    void reset(List<MainDat> mainData);
 
     @Query("UPDATE table_name SET text = :sText WHERE ID = :sID")
     void update(int sID, String sText);

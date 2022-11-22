@@ -28,4 +28,3 @@ public abstract class RoomD extends RoomDatabase
     public abstract MainDa mainDa();
 
 }
-

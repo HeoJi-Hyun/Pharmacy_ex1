@@ -48,10 +48,10 @@ public class MainAdapte extends RecyclerView.Adapter<MainAdapte.ViewHolder>
             @Override
             public void onClick(View v)
             {
-                MainDat mainDat = dataList.get(holder.getAdapterPosition());
+                MainDat mainData = dataList.get(holder.getAdapterPosition());
 
-                final int sID = mainDat.getId();
-                String sText = mainDat.getText();
+                final int sID = mainData.getId();
+                String sText = mainData.getText();
 
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.dialog);
@@ -92,9 +92,9 @@ public class MainAdapte extends RecyclerView.Adapter<MainAdapte.ViewHolder>
             @Override
             public void onClick(View v)
             {
-                MainDat mainDat = dataList.get(holder.getAdapterPosition());
+                MainDat mainData = dataList.get(holder.getAdapterPosition());
 
-                database.mainDa().delete(mainDat);
+                database.mainDa().delete(mainData);
 
                 int position = holder.getAdapterPosition();
                 dataList.remove(position);

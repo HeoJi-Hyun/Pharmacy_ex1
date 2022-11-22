@@ -16,7 +16,7 @@ public class Review extends AppCompatActivity
 {
     EditText editText;
     Button btAdd;
-    RecyclerView recycle;
+    RecyclerView recycler;
 
     List<MainDat> dataList = new ArrayList<>();
     RoomD database;
@@ -30,17 +30,17 @@ public class Review extends AppCompatActivity
 
         editText = findViewById(R.id.edit_text);
         btAdd = findViewById(R.id.bt_add);
-        recycle = findViewById(R.id.recycler);
+        recycler = findViewById(R.id.recycler);
 
         database = RoomD.getInstance(this);
 
         dataList = database.mainDa().getAll();
 
-        recycle.setLayoutManager(new LinearLayoutManager(this));
+        recycler.setLayoutManager(new LinearLayoutManager(this));
 
         adapter = new MainAdapte(Review.this, dataList);
 
-        recycle.setAdapter( adapter);
+        recycler.setAdapter(adapter);
 
         btAdd.setOnClickListener(new View.OnClickListener()
         {
