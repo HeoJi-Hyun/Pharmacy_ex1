@@ -3,6 +3,7 @@ package com.example.pharmacy_ex1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -44,11 +47,31 @@ public class Pharm extends AppCompatActivity {
         PharmListView pharmListView= new PharmListView(this, pharmName);
         listView.setAdapter(pharmListView);
 
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent in = new Intent(Pharm.this, Pharm1.class);
-                startActivity(in);
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+
+                TextView textview= (TextView)arg1.findViewById(R.id.pharmName);
+                String str = (String) textview.getText();
+
+                if (str.equals("코아약국")){
+                    Intent a = new Intent(Pharm.this, Pharm1.class);
+                    startActivity(a);
+                }
+                else if (str.equals("고황약국")){
+                    Intent b = new Intent(Pharm.this, Pharm3.class);
+                    startActivity(b);
+                }
+                if (str.equals("경희정문약국")){
+                    Intent c = new Intent(Pharm.this, Pharm2.class);
+                    startActivity(c);
+                }
+                else{
+
+                }
             }
         });
     }
@@ -95,7 +118,6 @@ public class Pharm extends AppCompatActivity {
             ex.printStackTrace();
         }
     }
-
     }
 //        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
 

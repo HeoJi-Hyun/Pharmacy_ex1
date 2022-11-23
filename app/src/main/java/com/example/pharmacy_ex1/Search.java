@@ -1,110 +1,211 @@
 package com.example.pharmacy_ex1;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-
-import java.util.List;
-
+import android.os.StrictMode;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.CheckedTextView;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
-public class Search extends Activity {
-    private List<String> list;
-    AutoCompleteTextView auto;
-    Button btn1;
-    CheckedTextView tv1, tv2, tv3;
+public class Search extends AppCompatActivity {
 
+    String urladdress = "http://hjh1963.dothome.co.kr/searchlist.php";
+    String[] name;
+    ListView listView_search;
+    RelativeLayout relativeLayout_search;
+    BufferedInputStream is;
+    String line=null;
+    String result=null;
 
+    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search);
 
+        listView_search=(ListView) findViewById(R.id.listview_search);
+        relativeLayout_search = (RelativeLayout)findViewById(R.id.relativeLayout_search);
 
-        tv1 = (CheckedTextView)findViewById(R.id.autoText1);
-        tv2 = (CheckedTextView)findViewById(R.id.autoText2);
-        tv3 = (CheckedTextView)findViewById(R.id.autoText3);
-        // 리스트를 생성한다.
-        list = new ArrayList<String>();
-
-        // 리스트에 검색될 데이터(단어)를 추가한다.
-        settingList();
-
-    }
-    // 검색에 사용될 데이터를 리스트에 추가한다.
-    private void settingList(){
-        list.add("타이레놀");
-        list.add("탁센");
-        list.add("광동경옥고");
-        list.add("까스활명수");
-        list.add("판콜에스");
-        list.add("판피린큐액");
-        list.add("벤포벨S에스정");
-        list.add("비맥스메타비 ");
-        list.add("케토톱플라스타");
-        list.add("아로나민골드프리미엄");
+        StrictMode.setThreadPolicy((new StrictMode.ThreadPolicy.Builder().permitNetwork().build()));
+        collectData();
+        Search_list search_list= new Search_list(this, name);
+        listView_search.setAdapter(search_list);
 
 
+        listView_search.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                if (auto.getText().toString().equals("타이레놀")){
-                    Intent intent6 = new Intent(Search.this, Prov1.class);
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 
-                    startActivity(intent6);
+                TextView tv= (TextView)arg1.findViewById(R.id.name);
+                String str = (String) tv.getText();
+
+                if (str.equals("타이레놀")){
+                    Intent a = new Intent(Search.this, Prov1.class);
+                    startActivity(a);
                 }
-                else if (auto.getText().toString().equals("탁센")){
-                    Intent intent7 = new Intent(Search.this, Prov2.class);
-
-                    startActivity(intent7);
+                else if (str.equals("탁센")){
+                    Intent b = new Intent(Search.this, Prov2.class);
+                    startActivity(b);
                 }
-                else if (auto.getText().toString().equals("광동경옥고")){
-                    Intent intent8 = new Intent(Search.this, Prov3.class);
-
-                    startActivity(intent8);
+                if (str.equals("광동경옥고")){
+                    Intent c = new Intent(Search.this, Prov3.class);
+                    startActivity(c);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "해당 제품이 없습니다", Toast.LENGTH_LONG).show();
+
                 }
             }
         });
-        tv1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent6 = new Intent(Search.this, Prov1.class);
-
-                startActivity(intent6);
-            }
-        });
-        tv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent7 = new Intent(Search.this, Prov2.class);
-
-                startActivity(intent7);
-            }
-        });
-        tv3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent8 = new Intent(Search.this, Prov3.class);
-
-                startActivity(intent8);
-            }
-        });
-
-
     }
+    private void collectData()
+    {
+        try{
 
+            URL url = new URL(urladdress);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("GET");
+            is=new BufferedInputStream(con.getInputStream());
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
+        try{
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            StringBuilder sb = new StringBuilder();
+            while ((line = br.readLine())!= null){
+                sb.append(line+"\n");
+            }
+            is.close();
+            result=sb.toString();
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
+        try{
+            JSONArray ja = new JSONArray(result);
+            JSONObject jo = null;
+            name = new String[ja.length()];
+
+            for(int i=0; i<=ja.length(); i++){
+                jo=ja.getJSONObject(i);
+                name[i]=jo.getString("name");
+            }
+        }
+        catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }
+//        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+
+
+//        list = new ArrayList<String>();
+
+// 리스트에 검색될 데이터(단어)를 추가한다.
+//        settingList();
+//
+//        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+//
+//        // AutoCompleteTextView 에 아답터를 연결한다.
+//        autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this,
+//                android.R.layout.simple_dropdown_item_1line, list));
+//    }
+
+//    private void settingList() {
+//        list.add("코아약국");
+//        list.add("경희정문약국");
+//        list.add("고황약국");
+//        list.add("성심약국");
+//        list.add("경희메디칼약국");
+//        list.add("크로바약국");
+//        list.add("경희온누리약국");
+
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (auto.getText().toString().equals("코아약국")){
+//                    Intent intent6 = new Intent(Pharm.this, Pharm1.class);
+//
+//                    startActivity(intent6);
+//                }
+//                else if (auto.getText().toString().equals("경희정문약국")){
+//                    Intent intent7 = new Intent(Pharm.this, Pharm2.class);
+//
+//                    startActivity(intent7);
+//                }
+//                else if (auto.getText().toString().equals("고황약국")){
+//                    Intent intent8 = new Intent(Pharm.this,Pharm3.class);
+//
+//                    startActivity(intent8);
+//                }
+//                else{
+//                    Toast.makeText(getApplicationContext(), "해당 약국이 없습니다", Toast.LENGTH_LONG).show();
+//                }
+//            }
+//        });
+
+
+
+//    }
+
+//        tv1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                    Intent intent1 = new Intent(Pharm.this, Pharm1.class);
+//
+//                    startActivity(intent1);
+//            }
+//        });
+//        tv2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                    Intent intent2 = new Intent(Pharm.this,Pharm2.class);
+//                    startActivity(intent2);
+//            }
+//        });
+//        tv3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                    Intent intent3 = new Intent(Pharm.this, Pharm3.class);
+//
+//                    startActivity(intent3);
+//            }
+//        });
+
+
+//    @Override
+//    public void onMapReady(@NonNull GoogleMap googleMap) {
+//        LatLng location = new LatLng(37.485284,126.901451);
+//        MarkerOptions markerOptions = new MarkerOptions();
+//        markerOptions.title("구로디지털단지역");
+//        markerOptions.snippet("전철역");
+//        markerOptions.position(location);
+//        googleMap.addMarker(markerOptions);
+//
+//        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location,10));
+//
+//    }
+

@@ -12,7 +12,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/hyper2"
         android:gravity="center_horizontal"
-        android:text="경희정문약국"
+        android:text="고황약국"
         android:textColor="@color/pharmacy"
         android:textSize="35dp"
         android:textStyle="bold" />
