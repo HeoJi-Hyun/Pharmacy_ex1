@@ -7,15 +7,31 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvProv1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="타이레놀"
-        android:textColor="@color/pharmacy"
-        android:textSize="40dp"
-        android:textStyle="bold" />
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvProv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="150dp"
+            android:text="타이레놀"
+            android:textColor="@color/pharmacy"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/review1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/review2"
+            android:backgroundTint="@color/pharmacy"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"

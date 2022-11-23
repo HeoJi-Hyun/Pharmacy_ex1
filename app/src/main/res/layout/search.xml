@@ -26,6 +26,7 @@
             android:completionThreshold="1"
             android:gravity="center_horizontal"
             android:textColorHint="#555555"
+            android:textColor="#424242"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
@@ -62,7 +63,7 @@
             <ListView
                 android:id="@+id/listview_search"
                 android:layout_width="match_parent"
-                android:layout_height="568dp" />
+                android:layout_height="600dp" />
         </LinearLayout>
     </ScrollView>
 

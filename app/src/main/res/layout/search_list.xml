@@ -8,20 +8,20 @@
     <RelativeLayout
         android:id="@+id/relativeLayout_search"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/pharmlist"
-        android:padding="15dp">
+        android:backgroundTint="#A6F4F4F4">
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="26dp"
             android:layout_marginLeft="26dp"
-            android:layout_marginTop="16dp"
-            android:textColor="#333"
-            android:textSize="22sp" />
+            android:layout_marginTop="17dp"
+            android:textColor="#424242"
+            android:textSize="25sp" />
     </RelativeLayout>
 </LinearLayout>

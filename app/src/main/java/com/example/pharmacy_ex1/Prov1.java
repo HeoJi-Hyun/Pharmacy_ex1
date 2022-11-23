@@ -1,7 +1,10 @@
 package com.example.pharmacy_ex1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -15,6 +18,7 @@ public class Prov1 extends AppCompatActivity {
     Prov1Frag1 frag1;
     Prov1Frag2 frag2;
     Prov1Frag3 frag3;
+    Button revew1;
 
     TabLayout tabs;
 
@@ -34,6 +38,15 @@ public class Prov1 extends AppCompatActivity {
         tabs.addTab(tabs.newTab().setText("성분/효능"));
         tabs.addTab(tabs.newTab().setText("용법"));
         tabs.addTab(tabs.newTab().setText("주의사항"));
+        revew1 = findViewById(R.id.review1);
+        revew1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(Prov1.this, Review.class);
+                startActivity(a);
+            }
+        });
+
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
