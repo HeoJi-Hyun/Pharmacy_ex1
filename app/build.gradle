@@ -36,7 +36,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.gms:play-services-location:21.0.1'
-    implementation 'com.google.android.material:material:1.8.0-alpha02'
+    implementation 'com.google.android.material:material:1.8.0-alpha03'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'com.rmtheis:tess-two:9.1.0'
     implementation 'com.android.volley:volley:1.2.1'
@@ -53,17 +53,14 @@ dependencies {
     //이거 api 어쩌고 추가+변경사항
     implementation 'noman.placesapi:placesAPI:1.1.3'
 
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.7.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-//이거 추가함 (2)
-    implementation 'com.google.android.material:material:1.8.0-alpha02'
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+
+
+
+
+
 //추가요
-    implementation 'com.google.android.gms:play-services-maps:18.1.0'
-    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
 }
