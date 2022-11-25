@@ -9,7 +9,9 @@
     <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
     <uses-permission android:name="android.permission.CAMERA"> </uses-permission> <!--카메라 권한-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"> </uses-permission>    <!--저장소 읽기 권한-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"> </uses-permission>    <!--저장소 쓰기 권한-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"> </uses-permission>    <!--저장소 쓰기 권한-->
+
     <uses-feature android:name="android.hardware.camera" android:required="true"/>
     <application
         android:usesCleartextTraffic="true"
@@ -30,7 +32,7 @@
 <!--            android:name="org.apache.http.legacy"-->
 <!--            android:required="false" />-->
         <activity
-            android:name=".Home"
+            android:name=".Home2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +68,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA9c0dBtwV9h4NwJR0FA3oY1Tls31IlXMc"/>
+            android:value="AIzaSyCDOrRXjY2PSDxxuM6pm6G3XF8S5YQhK2Q"/>
 
     </application>
 
