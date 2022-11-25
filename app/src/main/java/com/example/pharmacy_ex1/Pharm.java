@@ -1,14 +1,18 @@
 package com.example.pharmacy_ex1;
 
+import static android.R.layout.simple_dropdown_item_1line;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -22,6 +26,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pharm extends AppCompatActivity {
 
@@ -32,8 +38,11 @@ public class Pharm extends AppCompatActivity {
     BufferedInputStream is;
     String line=null;
     String result=null;
+    AutoCompleteTextView auto;
+    Button btn1, btnhome;
+    private List<String> list;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "CutPasteId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +50,72 @@ public class Pharm extends AppCompatActivity {
 
         listView=(ListView) findViewById(R.id.listview);
         relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
+        btn1 = (Button)findViewById(R.id.btnPharm);//검색버튼
+        btnhome = (Button)findViewById(R.id.btn_home);
 
         StrictMode.setThreadPolicy((new StrictMode.ThreadPolicy.Builder().permitNetwork().build()));
         collectData();
         PharmListView pharmListView= new PharmListView(this, pharmName);
         listView.setAdapter(pharmListView);
+
+        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);//자동완성 tv
+
+
+        list = new ArrayList<String>();//자동완성
+
+        settingList();//자동완성
+
+        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+
+        // AutoCompleteTextView 에 아답터를 연결한다.
+        autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this,
+                simple_dropdown_item_1line, list));
+    }
+
+    private void settingList() {
+        list.add("코아약국");
+        list.add("경희정문약국");
+        list.add("고황약국");
+        list.add("성심약국");
+        list.add("경희메디칼약국");
+        list.add("크로바약국");
+        list.add("경희온누리약국");
+
+        btnhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(Pharm.this, Home2.class);
+
+                startActivity(a);
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (auto.getText().toString().equals("코아약국")){
+                    Intent intent6 = new Intent(Pharm.this, Pharm1.class);
+
+                    startActivity(intent6);
+                }
+                else if (auto.getText().toString().equals("경희정문약국")){
+                    Intent intent7 = new Intent(Pharm.this, Pharm2.class);
+
+                    startActivity(intent7);
+                }
+                else if (auto.getText().toString().equals("고황약국")){
+                    Intent intent8 = new Intent(Pharm.this,Pharm3.class);
+
+                    startActivity(intent8);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "해당 약국이 없습니다", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+
+
 
 
 
@@ -119,81 +189,7 @@ public class Pharm extends AppCompatActivity {
         }
     }
     }
-//        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
 
-
-//        list = new ArrayList<String>();
-
-        // 리스트에 검색될 데이터(단어)를 추가한다.
-//        settingList();
-//
-//        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoPharm);
-//
-//        // AutoCompleteTextView 에 아답터를 연결한다.
-//        autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this,
-//                android.R.layout.simple_dropdown_item_1line, list));
-//    }
-
-//    private void settingList() {
-//        list.add("코아약국");
-//        list.add("경희정문약국");
-//        list.add("고황약국");
-//        list.add("성심약국");
-//        list.add("경희메디칼약국");
-//        list.add("크로바약국");
-//        list.add("경희온누리약국");
-
-//        btn1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if (auto.getText().toString().equals("코아약국")){
-//                    Intent intent6 = new Intent(Pharm.this, Pharm1.class);
-//
-//                    startActivity(intent6);
-//                }
-//                else if (auto.getText().toString().equals("경희정문약국")){
-//                    Intent intent7 = new Intent(Pharm.this, Pharm2.class);
-//
-//                    startActivity(intent7);
-//                }
-//                else if (auto.getText().toString().equals("고황약국")){
-//                    Intent intent8 = new Intent(Pharm.this,Pharm3.class);
-//
-//                    startActivity(intent8);
-//                }
-//                else{
-//                    Toast.makeText(getApplicationContext(), "해당 약국이 없습니다", Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        });
-
-
-
-//    }
-
-//        tv1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                    Intent intent1 = new Intent(Pharm.this, Pharm1.class);
-//
-//                    startActivity(intent1);
-//            }
-//        });
-//        tv2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                    Intent intent2 = new Intent(Pharm.this,Pharm2.class);
-//                    startActivity(intent2);
-//            }
-//        });
-//        tv3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                    Intent intent3 = new Intent(Pharm.this, Pharm3.class);
-//
-//                    startActivity(intent3);
-//            }
-//        });
 
 
 //    @Override

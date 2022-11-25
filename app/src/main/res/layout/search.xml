@@ -11,29 +11,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FBFBFB"
+        android:background="#FFFFFF"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:paddingTop="10sp">
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoPharm"
-            android:layout_width="309dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_round"
-            android:completionHint="검색어를 입력하세요."
-            android:completionThreshold="1"
-            android:gravity="center_horizontal"
-            android:textColorHint="#555555"
-            android:textColor="#424242"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            <ImageView
+                android:layout_width="335dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_round" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoProv"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:completionHint="검색어를 입력하세요."
+                android:completionThreshold="1"
+                android:gravity="left"
+                android:hint=" 약 이름을 검색하세요."
+                android:textColor="#555555"
+                android:textColorHint="#7C7C7C"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </RelativeLayout>
 
         <Button
-            android:id="@+id/btnPharm1"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="15sp"
+            android:id="@+id/btnProv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/search1"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -67,66 +84,79 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/pharmacy"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/iconhome"
+        android:backgroundTint="@color/pharmacy"
+        android:textColor="#291717"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/homeMy"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/icon3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <Button
-            android:id="@+id/homePharm"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/pharm"
-            android:textColor="#D3D3D3"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@color/pharmacy"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="horizontal">-->
 
-        <Button
-            android:id="@+id/home"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/iconhome"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+<!--        <Button-->
+<!--            android:id="@+id/homeMy"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/icon3"-->
+<!--            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />-->
 
-        <Button
-            android:id="@+id/homeAla"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/alarm"
-            android:minHeight="48dp"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+<!--        <Button-->
+<!--            android:id="@+id/homePharm"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/pharm"-->
+<!--            android:textColor="#D3D3D3"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />-->
 
-        <Button
-            android:id="@+id/homeChek"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/checked"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+<!--        <Button-->
+<!--            android:id="@+id/home"-->
+<!--            android:layout_width="65dp"-->
+<!--            android:layout_height="65dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/iconhome"-->
+<!--            android:textColor="#291717"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
 
-    </LinearLayout>
+<!--        <Button-->
+<!--            android:id="@+id/homeAla"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/alarm"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:textColor="#291717"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/homeChek"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/checked"-->
+<!--            android:textColor="#291717"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />-->
+
+<!--    </LinearLayout>-->
 </LinearLayout>

@@ -15,9 +15,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:orientation="horizontal"
-            android:background="@drawable/chek"
+            android:background="@drawable/button_join"
+            android:backgroundTint="#A6F4F4F4"
             android:padding="16dp">
 
             <TextView
@@ -28,19 +28,19 @@
                 android:textColor="#515151"
                 android:textSize="14sp" />
 
-            <ImageView
-                android:id="@+id/bt_edit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_baseline_border_color_24" />
+<!--            <ImageView-->
+<!--                android:id="@+id/bt_edit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:src="@drawable/ic_baseline_border_color_24" />-->
 
-            <ImageView
-                android:id="@+id/bt_delete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_baseline_delete_outline_24" />
+<!--            <ImageView-->
+<!--                android:id="@+id/bt_delete"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:src="@drawable/ic_baseline_delete_outline_24" />-->
         </LinearLayout>
 
     </LinearLayout>

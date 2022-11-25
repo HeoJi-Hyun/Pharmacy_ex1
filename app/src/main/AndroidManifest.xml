@@ -25,12 +25,12 @@
 
 
 
-<!--        <uses-library android:name="com.google.android.maps" />-->
-<!--        <uses-library-->
-<!--            android:name="org.apache.http.legacy"-->
-<!--            android:required="false" />-->
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <activity
-            android:name=".Home"
+            android:name=".Search"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +46,7 @@
         <activity android:name=".Chek" android:label="체크리스트"/>
         <activity android:name=".Prov3" android:label="타이레놀"/>
         <activity android:name=".Prov2" android:label="까스활명수"/>
-        <activity android:name=".Search" android:label="약정보"/>
+<!--        <activity android:name=".Search" android:label="약정보"/>-->
         <activity android:name=".Pharm" android:label="약국정보"/>
         <activity android:name=".Pharm1" android:label="약국정보"/>
         <activity android:name=".Pharm2" android:label="약국정보"/>
