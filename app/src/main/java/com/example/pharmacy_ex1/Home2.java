@@ -27,7 +27,7 @@ public class Home2 extends AppCompatActivity
 
     @Override
     public void onMapReady(final GoogleMap googleMap) {
-       //구글맵 객체 불러옴
+       //구글맵 객체 불러오무
         mMap = googleMap;
 
         LatLng DEFAULT_LOCATION =new LatLng(37.5888101627338, 127.06563586510103);
