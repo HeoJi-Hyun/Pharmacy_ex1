@@ -27,10 +27,10 @@
 
 
 
-<!--        <uses-library android:name="com.google.android.maps" />-->
-<!--        <uses-library-->
-<!--            android:name="org.apache.http.legacy"-->
-<!--            android:required="false" />-->
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <activity
             android:name=".Home2"
             android:exported="true">
@@ -68,7 +68,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCDOrRXjY2PSDxxuM6pm6G3XF8S5YQhK2Q"/>
+            android:value="AIzaSyDYIRXQpaBcESEXg_JGSESdjs6U3QxL8qE"/>
 
     </application>
 

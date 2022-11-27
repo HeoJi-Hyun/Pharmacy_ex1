@@ -9,56 +9,13 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/pharmacy">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-
-            android:layout_margin="10dp"
-            android:background="@drawable/menu"
-            android:contentDescription="@string/app_name" />
-
-        <LinearLayout
-            android:layout_width="249dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="리뷰리스트"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        <Button
-            android:id="@+id/homeProv"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/search"
-            android:contentDescription="@string/app_name"
-            android:minHeight="48dp"
-            android:textColor="#291717"
-            android:textSize="20sp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/reviewback"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <ImageView
@@ -83,7 +40,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="456dp">
+        android:layout_height="465dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
                 tools:listitem="@layout/list_row" />
         </LinearLayout>
     </ScrollView>
@@ -102,16 +60,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="40dp">
 
         <EditText
             android:id="@+id/edit_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/chek"
-            android:hint="리뷰를 작성해보세요."
-            android:padding="12dp"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_round"
+
+            android:hint="  리뷰를 작성해보세요."
             android:textColor="@color/pharmacy"
             android:textColorHint="@color/pharmacy" />
 

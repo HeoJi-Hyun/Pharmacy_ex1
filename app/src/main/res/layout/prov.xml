@@ -56,10 +56,12 @@
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
         android:elevation="1dp"
+        android:scrollbarSize="3dp"
         app:tabGravity="fill"
+        app:tabIndicatorColor="@color/pharmacy"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/black"
-        app:tabTextColor="@color/pharmacy"
+        app:tabSelectedTextColor="#3C3C3C"
+        app:tabTextColor="#3C3C3C"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <FrameLayout
