@@ -39,6 +39,7 @@ public class Search extends AppCompatActivity {
     private List<String> list;
     AutoCompleteTextView auto;
     Button btn1;
+    Button Home;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -54,7 +55,7 @@ public class Search extends AppCompatActivity {
         Search_list search_list= new Search_list(this, name);
         listView_search.setAdapter(search_list);
         btn1 = (Button)findViewById(R.id.btnPharm2);
-
+        Home = (Button)findViewById(R.id.Home);
         auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
 
 
@@ -90,6 +91,13 @@ public class Search extends AppCompatActivity {
                 else{
                     Toast.makeText(getApplicationContext(), "해당 의약품이 없습니다", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(Search.this, Home.class);
+                startActivity(home);
             }
         });
     }

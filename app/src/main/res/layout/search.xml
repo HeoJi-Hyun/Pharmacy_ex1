@@ -48,7 +48,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="800dp"
             android:orientation="vertical"
             android:paddingLeft="10dp">
 
@@ -67,9 +67,24 @@
             <ListView
                 android:id="@+id/listview_search"
                 android:layout_width="match_parent"
-                android:layout_height="600dp"
+                android:layout_height="800dp"
                 android:paddingTop="10dp" />
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp"
+            android:background="@drawable/home3"
+            android:backgroundTint="@color/pharmacy"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
 </LinearLayout>
