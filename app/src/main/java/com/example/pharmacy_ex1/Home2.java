@@ -220,7 +220,6 @@ public class Home2 extends AppCompatActivity
         markerOptions.position(DEFAULT_LOCATION);
         markerOptions.title("삼육보건대학교");
         markerOptions.snippet("현재위치");
-
         //약국마커생성
         DEFAULT_LOCATION =new LatLng(37.58871942031541, 127.0626749856806);
         mMap.addMarker(new MarkerOptions()
@@ -292,12 +291,35 @@ public class Home2 extends AppCompatActivity
                 .title("한가람약국")
                 .snippet("도로명주소 : 서울특별시 동대문구 망우로 77\n" +
                         "지번 주소 : 서울 동대문구 휘경동 269-9"));
-
+        DEFAULT_LOCATION =new LatLng( 37.649223092838895, 127.06250482983657);
+        mMap.addMarker(new MarkerOptions()
+                .position(DEFAULT_LOCATION)
+                .title("백약국")
+                .snippet("도로명주소 : 서울특별시 노원구 동일로 1350\n" +
+                        "지번 주소 : 서울 노원구 상계동 749-8"));
+        DEFAULT_LOCATION =new LatLng( 37.65171924699382,  127.06168535713014);
+        mMap.addMarker(new MarkerOptions()
+                .position(DEFAULT_LOCATION)
+                .title("보룡약국")
+                .snippet("도로명주소 : 서울특별시 노원구 동일로 1380\n" +
+                        "지번 주소 : 서울 노원구 상계동 728-5"));
+        DEFAULT_LOCATION =new LatLng(  37.654983977154124,  127.06418119112925 );
+        mMap.addMarker(new MarkerOptions()
+                .position(DEFAULT_LOCATION)
+                .title("자인당약국")
+                .snippet("도로명주소 : 서울특별시 노원구 노해로 506\n" +
+                        "지번 주소 : 서울 노원구 상계동 720-6"));
+        DEFAULT_LOCATION =new LatLng(  37.65489381725883,  127.06429443763088 );
+        mMap.addMarker(new MarkerOptions()
+                .position(DEFAULT_LOCATION)
+                .title("진약국")
+                .snippet("도로명주소 : 서울특별시 노원구 노해로 452\n" +
+                        "지번 주소 : 서울 노원구 상계동 734-3"));
 
 
         //마커 생성 + 지도 확대(카메라이동)
         mMap.addMarker(markerOptions);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_LOCATION, 18));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_LOCATION, 13));
 
         //런타임 퍼미션 요청 대화상자나 GPS 활성 요청 대화상자 보이기전에
         //지도의 초기위치를 서울로 이동

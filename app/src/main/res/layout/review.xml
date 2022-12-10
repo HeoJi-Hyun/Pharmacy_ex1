@@ -69,7 +69,7 @@
             android:background="@drawable/button_round"
 
             android:hint="  리뷰를 작성해보세요."
-            android:textColor="@color/pharmacy"
+            android:textColor="#535353"
             android:textColorHint="@color/pharmacy" />
 
         <Button

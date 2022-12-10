@@ -55,7 +55,7 @@ public class Mypage extends Activity {
         Scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent d = new Intent(Mypage.this, My_camera.class);
+                Intent d = new Intent(Mypage.this, Main.class);
                 startActivity(d);
             }
         });

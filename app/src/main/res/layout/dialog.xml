@@ -13,7 +13,8 @@
         android:background="@drawable/chek"
         android:padding="12dp"
         android:lines="4"
-        android:gravity="top"/>
+        android:gravity="top"
+        android:textColor="#474747"/>
 
     <Button
         android:id="@+id/bt_update"

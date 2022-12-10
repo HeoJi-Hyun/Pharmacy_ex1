@@ -12,40 +12,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FBFBFB"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:paddingTop="10sp">
+        android:background="#FBFBFB"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10sp">
 
 
-            <AutoCompleteTextView
-                android:id="@+id/autoChek"
-                android:layout_width="309dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_round"
-                android:backgroundTint="#F4F4F4"
-                android:completionHint="검색어를 입력하세요."
-                android:completionThreshold="1"
-                android:gravity="center_horizontal"
-                android:textColorHint="#555555"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        <AutoCompleteTextView
+            android:id="@+id/autoPharm"
+            android:layout_width="309dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/button_round"
+            android:completionHint="검색어를 입력하세요."
+            android:completionThreshold="1"
+            android:paddingLeft="10dp"
+            android:backgroundTint="#f4f4f4"
+            android:textColor="#555555"
+            android:textColorHint="#555555"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-            <Button
-                android:id="@+id/btnChek1"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="10sp"
-                android:background="@drawable/search1"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/btnPharm2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15sp"
+            android:background="@drawable/search1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="771dp"
@@ -240,4 +237,3 @@
             android:textSize="24sp"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
-</LinearLayout>

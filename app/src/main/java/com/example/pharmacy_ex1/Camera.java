@@ -121,7 +121,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(Camera.this, Home.class);
+                Intent a = new Intent(Camera.this, Home2.class);
                 startActivity(a);
             }
         });

@@ -39,17 +39,17 @@ public class Chek extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chek);
 
-        auto = (AutoCompleteTextView) findViewById(R.id.autoChek);
-        btnOk = (Button) findViewById(R.id.btnChek1);
+        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+        btnOk = (Button) findViewById(R.id.btnPharm2);
         btnChek = (Button) findViewById(R.id.btnChek2);
 
         list = new ArrayList<String>();
         settingList();
 
-        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoChek);
+        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoPharm);
         autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, list));
-        btnOk = (Button) findViewById(R.id.btnChek1);
-        editText1 = (EditText) findViewById(R.id.autoChek);
+        btnOk = (Button) findViewById(R.id.btnPharm2);
+        editText1 = (EditText) findViewById(R.id.autoPharm);
         togle1 = (ToggleButton) findViewById(R.id.tog1);
         togle2 = (ToggleButton) findViewById(R.id.tog2);
         togle3 = (ToggleButton) findViewById(R.id.tog3);
