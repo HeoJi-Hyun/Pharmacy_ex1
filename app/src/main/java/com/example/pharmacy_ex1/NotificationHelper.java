@@ -42,10 +42,10 @@ public class NotificationHelper extends ContextWrapper {
         return notiManager;
     }
 
-    public NotificationCompat.Builder getChannelNotification(){
+    public NotificationCompat.Builder getChannelNotification(String message){
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("약먹기")
-                .setContentText("타이레놀")
+                .setContentText(message)
                 .setSmallIcon(R.drawable.alarm_icon);
     }
 
