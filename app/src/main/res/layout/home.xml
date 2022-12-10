@@ -29,7 +29,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/mypageicon"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView"
@@ -77,54 +77,6 @@
                 android:layout_height="400dp"
                 android:orientation="vertical">
 
-                <!--                <LinearLayout-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginLeft="23dp"-->
-                <!--                    android:layout_marginTop="30dp"-->
-                <!--                    android:orientation="vertical">-->
-
-                <!--                    <TextView-->
-                <!--                        android:id="@+id/tvhome1"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:text="• 약 이름 1"-->
-                <!--                        android:textColor="#FD730E"-->
-                <!--                        android:textSize="20sp"-->
-                <!--                        android:textStyle="bold" />-->
-
-                <!--                    <TextView-->
-                <!--                        android:id="@+id/tvhome2"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginTop="10dp"-->
-                <!--                        android:text="• 약 이름 2"-->
-                <!--                        android:textColor="#FD730E"-->
-                <!--                        android:textSize="20sp"-->
-                <!--                        android:textStyle="bold" />-->
-
-                <!--                    <TextView-->
-                <!--                        android:id="@+id/tvhome3"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginTop="10dp"-->
-                <!--                        android:text="• 약 이름 3"-->
-                <!--                        android:textColor="#FD730E"-->
-                <!--                        android:textSize="20sp"-->
-                <!--                        android:textStyle="bold" />-->
-
-                <!--                    <TextView-->
-                <!--                        android:id="@+id/tvhome4"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginTop="10dp"-->
-                <!--                        android:layout_weight="0"-->
-                <!--                        android:text="• 약 이름 4"-->
-                <!--                        android:textColor="#FD730E"-->
-                <!--                        android:textSize="20sp"-->
-                <!--                        android:textStyle="bold" />-->
-                <!--                </LinearLayout>-->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
@@ -163,30 +115,25 @@
                             android:textColor="#99000000"
                             android:textSize="20dp"
                             android:textStyle="bold" />
-
                     </LinearLayout>
-
-
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_gravity="bottom"
         android:background="@color/pharmacy"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/homeProv"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_marginRight="25dp"
             android:background="@drawable/rjator"
             android:minHeight="48dp"
             android:textColor="#291717"
@@ -194,35 +141,32 @@
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
+            android:layout_marginRight="25dp"
             android:id="@+id/homePharm"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:background="@drawable/dirrnr"
             android:textColor="#D3D3D3"
-            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
+            android:layout_marginRight="25dp"
             android:id="@+id/homeScan"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:background="@drawable/button_camera"
-            android:padding="0dp"
             android:src="@drawable/scan50"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
+            android:layout_marginRight="25dp"
             android:id="@+id/homeAla"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:background="@drawable/alarm2"
-            android:minHeight="48dp"
             android:textColor="#291717"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
@@ -232,7 +176,6 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:background="@drawable/checked"
             android:textColor="#291717"
             android:textSize="20sp"

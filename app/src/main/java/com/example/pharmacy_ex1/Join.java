@@ -21,7 +21,6 @@ public class Join extends MainActivity{
     private EditText et_id, et_pass, et_name, et_age;
     private Button btnJoin;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +40,8 @@ public class Join extends MainActivity{
                 String userPass = et_pass.getText().toString();
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
+
+
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -65,6 +66,7 @@ public class Join extends MainActivity{
 //                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
 //                RequestQueue queue = Volley.newRequestQueue(Join.this);
 //                queue.add(registerRequest);
+
             }
         });
     }

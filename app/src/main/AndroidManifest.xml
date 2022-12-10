@@ -32,7 +32,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
         <activity
-            android:name=".Home"
+            android:name=".Home2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,7 @@
 
         </activity>
         <activity android:name=".Join" android:label="회원가입"/>
-<!--        <activity android:name=".Home" android:label="홈"/>-->
+        <activity android:name=".Home" android:label="홈"/>
         <activity android:name=".Alarm" android:label="알람기능"/>
         <activity android:name=".Prov1" android:label="타이레놀"/>
         <activity android:name=".Chek" android:label="체크리스트"/>

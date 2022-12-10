@@ -99,6 +99,7 @@ public class Home extends AppCompatActivity implements OnMapReadyCallback{
                 .snippet("도로명주소 : 서울특별시 동대문구 망우로18길 26\n" +
                         "지번 주소 : 서울 동대문구 휘경동 286-230"));
 
+
         DEFAULT_LOCATION =new LatLng(37.58973095167889, 127.06235880323358);
         mMap.addMarker(new MarkerOptions()
                 .position(DEFAULT_LOCATION)
