@@ -48,7 +48,7 @@ public class Mypage extends Activity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent c = new Intent(Mypage.this, Home.class);
+                Intent c = new Intent(Mypage.this, Home2.class);
                 startActivity(c);
             }
         });

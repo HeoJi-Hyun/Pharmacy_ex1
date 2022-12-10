@@ -96,7 +96,7 @@ public class Search extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent home = new Intent(Search.this, Home.class);
+                Intent home = new Intent(Search.this, Home2.class);
                 startActivity(home);
             }
         });

@@ -28,7 +28,7 @@
             android:layout_height="304dp"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            app:srcCompat="@drawable/lovepharm7" />
+            android:src="@drawable/lovepharm7" />
 
         <TextView
             android:layout_width="match_parent"

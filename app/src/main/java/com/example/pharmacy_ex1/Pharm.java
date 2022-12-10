@@ -42,7 +42,7 @@ public class Pharm extends AppCompatActivity {
     AutoCompleteTextView auto;
     Button btn1;
     Button Home;
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "CutPasteId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +90,36 @@ public class Pharm extends AppCompatActivity {
 
                     startActivity(intent8);
                 }
+                else if (auto.getText().toString().equals("한가람약국")){
+                    Intent intent9 = new Intent(Pharm.this,Pharm4.class);
+
+                    startActivity(intent9);
+                }
+                else if (auto.getText().toString().equals("우리들위생약국")){
+                    Intent intent10 = new Intent(Pharm.this,Pharm5.class);
+
+                    startActivity(intent10);
+                }
+                else if (auto.getText().toString().equals("크로바약국")){
+                    Intent intent11 = new Intent(Pharm.this,Pharm6.class);
+
+                    startActivity(intent11);
+                }
+                else if (auto.getText().toString().equals("메디팜사랑약국")){
+                    Intent intent12 = new Intent(Pharm.this,Pharm7.class);
+
+                    startActivity(intent12);
+                }
+                else if (auto.getText().toString().equals("삼육정문약국")){
+                    Intent intent13 = new Intent(Pharm.this,Pharm8.class);
+
+                    startActivity(intent13);
+                }
+                else if (auto.getText().toString().equals("영림약국")){
+                    Intent intent14 = new Intent(Pharm.this,Pharm9.class);
+
+                    startActivity(intent14);
+                }
                 else{
                     Toast.makeText(getApplicationContext(), "해당 약국이 없습니다", Toast.LENGTH_LONG).show();
                 }
@@ -98,7 +128,7 @@ public class Pharm extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent home = new Intent(Pharm.this, Home.class);
+                Intent home = new Intent(Pharm.this, Home2.class);
                 startActivity(home);
             }
         });
@@ -109,10 +139,12 @@ public class Pharm extends AppCompatActivity {
         list.add("코아약국");
         list.add("경희정문약국");
         list.add("고황약국");
-        list.add("성심약국");
-        list.add("경희메디칼약국");
+        list.add("한가람약국");
+        list.add("우리들위생약국");
         list.add("크로바약국");
-        list.add("경희온누리약국");
+        list.add("메디팜사랑약국");
+        list.add("삼육정문약국");
+        list.add("영림약국");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -130,9 +162,39 @@ public class Pharm extends AppCompatActivity {
                     Intent b = new Intent(Pharm.this, Pharm3.class);
                     startActivity(b);
                 }
-                if (str.equals("경희정문약국")){
+                else if (str.equals("경희정문약국")){
                     Intent c = new Intent(Pharm.this, Pharm2.class);
                     startActivity(c);
+                }
+                else if (str.equals("한가람약국")){
+                    Intent d = new Intent(Pharm.this,Pharm4.class);
+
+                    startActivity(d);
+                }
+                else if (str.equals("우리들위생약국")){
+                    Intent e = new Intent(Pharm.this,Pharm5.class);
+
+                    startActivity(e);
+                }
+                else if (str.equals("크로바약국")){
+                    Intent f = new Intent(Pharm.this,Pharm6.class);
+
+                    startActivity(f);
+                }
+                else if (str.equals("메디팜사랑약국")){
+                    Intent g = new Intent(Pharm.this,Pharm7.class);
+
+                    startActivity(g);
+                }
+                else if (str.equals("삼육정문약국")){
+                    Intent h = new Intent(Pharm.this,Pharm8.class);
+
+                    startActivity(h);
+                }
+                else if (str.equals("영림약국")){
+                    Intent i = new Intent(Pharm.this,Pharm9.class);
+
+                    startActivity(i);
                 }
                 else{
 

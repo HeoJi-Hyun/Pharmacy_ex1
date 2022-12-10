@@ -45,30 +45,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="800dp"
-            android:orientation="vertical"
-            android:paddingLeft="10dp">
-
-            <!--    <FrameLayout-->
-            <!--        android:layout_width="match_parent"-->
-            <!--        android:layout_height="200dp"-->
-            <!--        android:layout_margin="20dp"-->
-            <!--        android:layout_weight="0">-->
-            <!--        <fragment-->
-            <!--            android:id="@+id/googleMap"-->
-            <!--            class="com.google.android.gms.maps.MapFragment"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="match_parent" />-->
-            <!--    </FrameLayout>-->
-
+            android:layout_height="700dp"
+            android:orientation="vertical">
             <ListView
                 android:id="@+id/listview_search"
                 android:layout_width="match_parent"
-                android:layout_height="800dp"
-                android:paddingTop="10dp" />
+                android:layout_height="700dp" />
         </LinearLayout>
     </ScrollView>
     <LinearLayout

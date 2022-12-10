@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv1Pharm6"
+            android:id="@+id/tv1Pharm4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -23,12 +23,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/image1Pharm6"
+            android:id="@+id/image1Pharm4"
             android:layout_width="match_parent"
             android:layout_height="304dp"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            app:srcCompat="@drawable/hanpharm4" />
+            android:src="@drawable/hanpharm4" />
 
         <TextView
             android:layout_width="match_parent"
