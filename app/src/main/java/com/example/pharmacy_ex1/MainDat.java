@@ -6,13 +6,13 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(tableName = "table_name")
+@Entity(tableName = "table_name2")
 public class MainDat implements Serializable
 {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    @ColumnInfo(name = "text")
+    @ColumnInfo(name = "text2")
     private String text;
 
     public int getId()

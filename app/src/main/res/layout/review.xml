@@ -40,7 +40,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="465dp">
+        android:layout_height="465dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,11 +57,9 @@
                 tools:listitem="@layout/list_row" />
         </LinearLayout>
     </ScrollView>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/edit_text"
@@ -85,7 +84,6 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 
 </LinearLayout>

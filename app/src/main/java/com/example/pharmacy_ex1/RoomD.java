@@ -11,7 +11,7 @@ public abstract class RoomD extends RoomDatabase
 {
     private static RoomD database;
 
-    private static String DATABASE_NAME = "database";
+    private static String DATABASE_NAME = "database2";
 
     public synchronized static RoomD getInstance(Context context)
     {

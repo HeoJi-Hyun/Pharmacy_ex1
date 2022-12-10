@@ -142,7 +142,6 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
                 Intent intent = new Intent(getApplicationContext(), Main.class);
                 intent.putExtra("a", text);
                 startActivity(intent);
-
             }
         });
 

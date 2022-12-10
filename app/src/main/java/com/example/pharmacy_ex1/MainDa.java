@@ -21,9 +21,9 @@ public interface MainDa
     @Delete
     void reset(List<MainDat> mainData);
 
-    @Query("UPDATE table_name SET text = :sText WHERE ID = :sID")
+    @Query("UPDATE table_name2 SET text2 = :sText WHERE ID = :sID")
     void update(int sID, String sText);
 
-    @Query("SELECT * FROM table_name")
+    @Query("SELECT * FROM table_name2")
     List<MainDat> getAll();
 }

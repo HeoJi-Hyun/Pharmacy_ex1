@@ -47,11 +47,11 @@ public class Review extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                String sText = editText.getText().toString().trim();
-                if (!sText.equals(""))
+                String Text = editText.getText().toString().trim();
+                if (!Text.equals(""))
                 {
                     MainDat data = new MainDat();
-                    data.setText(sText);
+                    data.setText(Text);
                     database.mainDa().insert(data);
 
                     editText.setText("");
