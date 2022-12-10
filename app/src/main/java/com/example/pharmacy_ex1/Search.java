@@ -3,15 +3,16 @@ package com.example.pharmacy_ex1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Search extends AppCompatActivity {
 
@@ -33,6 +36,9 @@ public class Search extends AppCompatActivity {
     BufferedInputStream is;
     String line=null;
     String result=null;
+    private List<String> list;
+    AutoCompleteTextView auto;
+    Button btn1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -47,6 +53,54 @@ public class Search extends AppCompatActivity {
         collectData();
         Search_list search_list= new Search_list(this, name);
         listView_search.setAdapter(search_list);
+        btn1 = (Button)findViewById(R.id.btnPharm2);
+
+        auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+
+
+        list = new ArrayList<String>();
+
+
+        settingList();
+
+        final AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoPharm);
+
+        // AutoCompleteTextView 에 아답터를 연결한다.
+        autoCompleteTextView.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, list));
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (auto.getText().toString().equals("타이레놀")){
+                    Intent intent6 = new Intent(Search.this, Prov1.class);
+
+                    startActivity(intent6);
+                }
+                else if (auto.getText().toString().equals("탁센")){
+                    Intent intent7 = new Intent(Search.this, Prov2.class);
+
+                    startActivity(intent7);
+                }
+                else if (auto.getText().toString().equals("광동경옥고")){
+                    Intent intent8 = new Intent(Search.this,Prov3.class);
+
+                    startActivity(intent8);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "해당 의약품이 없습니다", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+    private void settingList() {
+        list.add("타이레놀");
+        list.add("탁센");
+        list.add("광동경옥고");
+        list.add("성심약국");
+        list.add("경희메디칼약국");
+        list.add("크로바약국");
+        list.add("경희온누리약국");
 
 
         listView_search.setOnItemClickListener(new AdapterView.OnItemClickListener() {

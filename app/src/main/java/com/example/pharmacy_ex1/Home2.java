@@ -148,8 +148,6 @@ public class Home2 extends AppCompatActivity
         //지도의 초기위치를 서울로 이동
         setDefaultLocation();
 
-
-
         //런타임 퍼미션 처리
         // 1. 위치 퍼미션을 가지고 있는지 체크합니다.
         int hasFineLocationPermission = ContextCompat.checkSelfPermission(this,

@@ -21,15 +21,18 @@
             android:id="@+id/autoPharm"
             android:layout_width="309dp"
             android:layout_height="match_parent"
+            android:layout_gravity="left"
             android:background="@drawable/button_round"
             android:completionHint="검색어를 입력하세요."
             android:completionThreshold="1"
-            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:textColor="#555555"
             android:textColorHint="#555555"
+            android:textSize="20sp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/btnPharm1"
+            android:id="@+id/btnPharm2"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginLeft="15sp"

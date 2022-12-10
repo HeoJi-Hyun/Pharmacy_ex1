@@ -59,6 +59,7 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
     Button btn_ocr; //텍스트 추출 버튼
     Button btn_gal;
     Button btn_my;
+    Button Home, Mypage;
     TextView tv;
     String text;
 
@@ -89,6 +90,8 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
         btn_picture.setOnClickListener(this);
         btn_my = (Button)findViewById(R.id.mypage);
         tv = (TextView)findViewById(R.id.OCRTextView);
+        Home = (Button)findViewById(R.id.Home);
+        Mypage = (Button)findViewById(R.id.Mypage);
 
         //언어파일 경로
         datapath = getFilesDir() + "/tesseract/";
@@ -115,6 +118,21 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
                 ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
             }
         }
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(Camera.this, Home.class);
+                startActivity(a);
+            }
+        });
+
+        Mypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent b = new Intent(Camera.this, Mypage.class);
+                startActivity(b);
+            }
+        });
 
 
         btn_my.setOnClickListener(new View.OnClickListener() {
@@ -163,7 +181,6 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
 
         }
     }
-
     ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -234,12 +251,11 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
 
                 intent.putExtra("outputX", 200); //크롭한 이미지 x축 크기
                 intent.putExtra("outputY", 200); //크롭한 이미지 y축 크기
-//                intent.putExtra("aspectX", 1); //크롭 박스의 x축 비율
-//                intent.putExtra("aspectY", 1); //크롭 박스의 y축 비율
+                intent.putExtra("aspectX", 1); //크롭 박스의 x축 비율
+                intent.putExtra("aspectY", 1); //크롭 박스의 y축 비율
                 intent.putExtra("scale", true);
                 intent.putExtra("return-data", true);
                 startActivityForResult(intent, TAKE_PICTURE);
-
                 break;
             }
         }

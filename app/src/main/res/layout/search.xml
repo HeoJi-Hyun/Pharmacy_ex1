@@ -21,16 +21,18 @@
             android:id="@+id/autoPharm"
             android:layout_width="309dp"
             android:layout_height="match_parent"
+            android:layout_gravity="left"
             android:background="@drawable/button_round"
             android:completionHint="검색어를 입력하세요."
             android:completionThreshold="1"
-            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:textColor="#555555"
             android:textColorHint="#555555"
-            android:textColor="#424242"
+            android:textSize="20sp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/btnPharm1"
+            android:id="@+id/btnPharm2"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginLeft="15sp"
@@ -43,10 +45,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
 
             <!--    <FrameLayout-->
             <!--        android:layout_width="match_parent"-->
@@ -63,70 +67,9 @@
             <ListView
                 android:id="@+id/listview_search"
                 android:layout_width="match_parent"
-                android:layout_height="600dp" />
+                android:layout_height="600dp"
+                android:paddingTop="10dp" />
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/pharmacy"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/homeMy"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/icon3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/homePharm"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/pharm"
-            android:textColor="#D3D3D3"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/home"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/iconhome"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/homeAla"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/alarm"
-            android:minHeight="48dp"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/homeChek"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/checked"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-    </LinearLayout>
 </LinearLayout>
