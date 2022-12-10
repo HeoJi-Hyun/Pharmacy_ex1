@@ -41,6 +41,7 @@ public class Pharm extends AppCompatActivity {
     private List<String> list;
     AutoCompleteTextView auto;
     Button btn1;
+    Button Home;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,7 @@ public class Pharm extends AppCompatActivity {
         PharmListView pharmListView= new PharmListView(this, pharmName);
         listView.setAdapter(pharmListView);
         btn1 = (Button)findViewById(R.id.btnPharm2);
+        Home = (Button)findViewById(R.id.Home);
 
         auto = (AutoCompleteTextView) findViewById(R.id.autoPharm);
 
@@ -91,6 +93,13 @@ public class Pharm extends AppCompatActivity {
                 else{
                     Toast.makeText(getApplicationContext(), "해당 약국이 없습니다", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(Pharm.this, Home.class);
+                startActivity(home);
             }
         });
     }

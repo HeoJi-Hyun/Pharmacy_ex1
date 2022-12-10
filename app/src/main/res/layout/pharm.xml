@@ -68,67 +68,20 @@
         android:layout_height="568dp" />
 </LinearLayout>
     </ScrollView>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/pharmacy"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/homeMy"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/icon3"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/homePharm"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/pharm"
-            android:textColor="#D3D3D3"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/home"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/iconhome"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/homeAla"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/alarm"
-            android:minHeight="48dp"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/homeChek"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:background="@drawable/checked"
-            android:textColor="#291717"
-            android:textSize="20sp"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
+            android:id="@+id/Home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp"
+            android:background="@drawable/home3"
+            android:backgroundTint="@color/pharmacy"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 </LinearLayout>
