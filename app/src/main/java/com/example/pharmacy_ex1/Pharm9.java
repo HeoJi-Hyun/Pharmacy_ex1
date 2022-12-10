@@ -5,10 +5,10 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-public class Pharm8 extends Activity {
+public class Pharm9 extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pharm8);
+        setContentView(R.layout.pharm9);
     }
 }
