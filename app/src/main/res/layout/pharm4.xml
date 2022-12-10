@@ -17,7 +17,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/hyper2"
             android:gravity="center_horizontal"
-            android:text="크로바약국"
+            android:text="한가람약국"
             android:textColor="@color/pharmacy"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -28,7 +28,7 @@
             android:layout_height="304dp"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            app:srcCompat="@drawable/crovapharm6" />
+            app:srcCompat="@drawable/hanpharm4" />
 
         <TextView
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                     android:id="@+id/tv11Pharm6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="도로명 : 서울 동대문구 망우로 80, 1층"
+                    android:text="도로명 : 서울 동대문구 망우로 77"
                     android:textColor="#000000"
                     android:textColorHint="#989898"
                     android:textSize="20sp" />
@@ -67,7 +67,7 @@
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
 
-                    android:text="지번 : 휘경동 276-45"
+                    android:text="지번 : 휘경동 269-9"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
@@ -100,7 +100,7 @@
                 android:id="@+id/tv4Pharm6"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="02-2217-7682"
+                android:text="02-3394-4865"
                 android:textColor="#000000"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -162,25 +162,25 @@
                 android:id="@+id/tv8Pharm6"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="이용시간 : 월~목 08:30 - 18:00"
+                android:text="이용시간 : 월~금 09:00 - 20:30"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tv10Pharm4"
+            android:id="@+id/tv10Pharm3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="                                 금 08:30 ~ 13:00"
+            android:text="                                 일 09:00 - 20:30"
             android:textColor="#000000"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/tv10Pharm3"
+            android:id="@+id/tv10Pharm4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="                                 일 08:30 ~ 18:30"
+            android:text="                                 토요일, 공휴일 휴무"
             android:textColor="#000000"
             android:textSize="20sp" />
 
