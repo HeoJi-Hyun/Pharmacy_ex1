@@ -141,7 +141,7 @@ public class My_Chek extends Activity {
             l9.setVisibility(View.GONE);
         }
 
-        if (tv10.getText().toString().equals("무릎관절증")) {
+        if (tv10.getText().toString().equals("무릎 관절증")) { //1211수정
             l10.setVisibility(View.VISIBLE);
         } else {
             l10.setVisibility(View.GONE);

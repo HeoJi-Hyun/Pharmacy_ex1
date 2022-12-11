@@ -105,10 +105,10 @@ public class Search extends AppCompatActivity {
         list.add("타이레놀");
         list.add("탁센");
         list.add("광동경옥고");
-        list.add("성심약국");
-        list.add("경희메디칼약국");
-        list.add("크로바약국");
-        list.add("경희온누리약국");
+        list.add("판콜에스내복약");
+        list.add("판피린큐액");
+        list.add("아로나민골드프리미엄");
+        list.add("케토톱플라스타");
 
 
         listView_search.setOnItemClickListener(new AdapterView.OnItemClickListener() {

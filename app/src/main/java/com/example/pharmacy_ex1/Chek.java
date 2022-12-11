@@ -85,7 +85,7 @@ public class Chek extends Activity {
                     togle8.setTextColor(Color.BLUE);
                 } else if (editText1.getText().toString().equals("척추병증")) {
                     togle9.setTextColor(Color.BLUE);
-                } else if (editText1.getText().toString().equals("무릎관절증")) {
+                } else if (editText1.getText().toString().equals("무릎 관절증")) { //1211수정
                     togle10.setTextColor(Color.BLUE);
                 } else if (editText1.getText().toString().equals("당뇨병")) {
                     togle11.setTextColor(Color.BLUE);
@@ -131,7 +131,7 @@ public class Chek extends Activity {
                 } else {
                 }
                 if (togle5.isChecked()) {
-                    intent.putExtra("e", str6);
+                    intent.putExtra("e", str5);
                 } else {
                 }
                 if (togle6.isChecked()) {
@@ -178,6 +178,7 @@ public class Chek extends Activity {
         list.add("척추병증");
         list.add("무릎 관절증");
         list.add("당뇨병");
+        list.add("담석증"); //1211추가
     }
 
 
