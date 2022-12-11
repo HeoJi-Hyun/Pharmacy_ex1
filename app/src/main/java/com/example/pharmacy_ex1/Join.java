@@ -41,8 +41,6 @@ public class Join extends MainActivity{
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
 
-
-
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -63,9 +61,9 @@ public class Join extends MainActivity{
                     }
                 };
 
-//                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
-//                RequestQueue queue = Volley.newRequestQueue(Join.this);
-//                queue.add(registerRequest);
+                RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(Join.this);
+                queue.add(registerRequest);
 
             }
         });
